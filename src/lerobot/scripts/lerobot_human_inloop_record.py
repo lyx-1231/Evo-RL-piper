@@ -31,6 +31,7 @@ from typing import Any
 
 from lerobot.configs import parser
 from lerobot.scripts.human_inloop_depth import DepthRecordConfig, record_with_depth
+from lerobot.scripts.human_inloop_eef import EefRecordConfig, record_with_eef
 from lerobot.scripts.lerobot_record import RecordConfig, record
 from lerobot.utils.constants import HF_LEROBOT_HOME
 from lerobot.utils.import_utils import register_third_party_plugins
@@ -44,6 +45,7 @@ from lerobot.utils.recording_annotations import (
 @dataclass
 class HumanInloopRecordConfig(RecordConfig):
     depth: DepthRecordConfig = field(default_factory=DepthRecordConfig)
+    eef: EefRecordConfig = field(default_factory=EefRecordConfig)
 
 
 def _default_failure_reset_pose_path(cfg: RecordConfig) -> Path:
@@ -169,6 +171,8 @@ def human_inloop_record(cfg: HumanInloopRecordConfig):
         cfg.acp_inference.use_cfg,
         cfg.acp_inference.cfg_beta,
     )
+    if cfg.eef.enable:
+        return record_with_eef(cfg, record.__wrapped__)
     if cfg.depth.enable:
         return record_with_depth(cfg, record.__wrapped__)
     return record.__wrapped__(cfg)

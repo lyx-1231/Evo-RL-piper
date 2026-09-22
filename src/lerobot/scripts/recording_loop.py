@@ -382,7 +382,12 @@ def record_loop(
 
         # Write to dataset
         if dataset is not None:
-            action_frame = build_dataset_frame(dataset.features, action_values, prefix=ACTION)
+            recorded_action = (
+                dataset.prepare_action_for_dataset(action_values)
+                if hasattr(dataset, "prepare_action_for_dataset")
+                else action_values
+            )
+            action_frame = build_dataset_frame(dataset.features, recorded_action, prefix=ACTION)
             policy_action_frame = build_dataset_frame(
                 dataset.features, policy_action_for_storage, prefix="complementary_info.policy_action"
             )
