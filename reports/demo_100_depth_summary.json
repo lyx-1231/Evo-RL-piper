@@ -1,0 +1,64 @@
+{
+  "dataset": "datas/demo_100",
+  "episodes": 3,
+  "frames": 884,
+  "episode_frame_counts": [
+    723,
+    50,
+    111
+  ],
+  "episode_labels": [
+    "success",
+    "success",
+    "failure"
+  ],
+  "head_hole_filling_mode": "FURTHEST",
+  "wrist_hole_filling_mode": null,
+  "head": {
+    "frames": 884,
+    "valid_fraction_mean": 0.9992996294070513,
+    "valid_fraction_min": 0.9984505208333333,
+    "valid_fraction_max": 0.9995052083333333,
+    "hole_fraction_mean": 0.0007003705929486959,
+    "depth_mm_p1_p50_p99": [
+      487.0,
+      636.0,
+      2308.0
+    ]
+  },
+  "wrist": {
+    "frames": 884,
+    "valid_fraction_mean": 0.7644536589425434,
+    "valid_fraction_min": 0.59986328125,
+    "valid_fraction_max": 0.80591796875,
+    "hole_fraction_mean": 0.23554634105745664,
+    "depth_mm_p1_p50_p99": [
+      181.0,
+      831.0,
+      9245.0
+    ]
+  },
+  "representative_samples": [
+    {
+      "episode": 0,
+      "frame": 361,
+      "label": "success",
+      "head_hole_fraction": 0.0006868489583333335,
+      "wrist_hole_fraction": 0.24273763020833333
+    },
+    {
+      "episode": 1,
+      "frame": 25,
+      "label": "success",
+      "head_hole_fraction": 0.000712890625,
+      "wrist_hole_fraction": 0.26614583333333336
+    },
+    {
+      "episode": 2,
+      "frame": 55,
+      "label": "failure",
+      "head_hole_fraction": 0.0005826822916666667,
+      "wrist_hole_fraction": 0.26353841145833334
+    }
+  ]
+}

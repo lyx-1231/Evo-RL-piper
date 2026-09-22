@@ -46,6 +46,26 @@ RGB 分辨率与帧率仍由 `robot.cameras` 设置，建议 RGB、深度与采�
 如果设备不支持所选配置，会明确报错，不会静默降级为仅保存 RGB。
 双相机 RGB-D 比纯 RGB 占用更多 USB 带宽，建议使用 USB 3 数据线与接口。
 
+## 第三视角孔洞填充
+
+只要 `depth.cameras` 包含第三视角 `head`，就会默认使用 `FURTHEST` 模式开启孔洞填充。
+原有采集命令无需增加参数。等价的显式配置是：
+
+```bash
+  --depth.hole_filling_cameras='[head]' \
+  --depth.hole_filling_mode=FURTHEST
+```
+
+实现使用 Orbbec SDK `HoleFillingFilter`。启用软件对齐时，处理顺序为
+RGB 对齐 → `FURTHEST` 孔洞填充 → 按相机配置旋转 → 保存 uint16 PNG。
+`wrist` 不在 `hole_filling_cameras` 中，因此腕部深度保持原有处理方式。
+支持的模式为 `TOP`、`NEAREST` 和 `FURTHEST`。调试时如需关闭，可显式使用
+`--depth.hole_filling_cameras='[]'`；只采集 `wrist` 时也会自动保持关闭。
+
+该功能只修改 Orbbec 深度帧回调和深度元数据，不修改
+`lerobot-human-inloop-record` 的 robot/teleop 初始化、Piper CAN 配置、动作读取或动作发送路径。
+保存后的 `cameras.json` 和 `frames.jsonl` 会记录 `hole_filling_mode`，未启用的相机记录为 `null`。
+
 ## 软件对齐（640×480，30 FPS）
 
 开启深度采集后，`depth.align_to_color` 默认是 `true`。

@@ -100,18 +100,25 @@ def add_frame(dataset):
 
 
 def test_cli_depth_is_optional_and_parses_camera_selection():
-    assert not parse_config().depth.enable
-    assert parse_config().depth.align_to_color
-    assert (parse_config().depth.width, parse_config().depth.height, parse_config().depth.fps) == (
+    default_config = parse_config()
+    assert not default_config.depth.enable
+    assert default_config.depth.align_to_color
+    assert (default_config.depth.width, default_config.depth.height, default_config.depth.fps) == (
         640,
         480,
         30,
     )
+    assert default_config.depth.hole_filling_cameras == ["head"]
+    assert default_config.depth.hole_filling_mode == "FURTHEST"
     assert not parse_config("--depth.align_to_color=false").depth.align_to_color
     config = parse_config("--depth.enable=true", "--depth.cameras=[wrist]", "--depth.serials={wrist: SERIAL}")
     assert config.depth.enable
     assert config.depth.cameras == ["wrist"]
     assert config.depth.serials == {"wrist": "SERIAL"}
+    assert config.depth.hole_filling_cameras == []
+    assert config.depth.hole_filling_mode == "FURTHEST"
+    assert parse_config("--depth.hole_filling_cameras=[]").depth.hole_filling_cameras == []
+    assert parse_config("--depth.hole_filling_cameras=[head]").depth.hole_filling_cameras == ["head"]
 
 
 def test_disabled_depth_does_not_load_sdk(monkeypatch):
@@ -142,6 +149,10 @@ def test_missing_sdk_has_install_instruction(monkeypatch):
         {"serials": {"unknown": "SERIAL"}},
         {"fps": 0},
         {"timeout_s": float("nan")},
+        {"hole_filling_cameras": ["head", "head"]},
+        {"hole_filling_cameras": ["../head"]},
+        {"hole_filling_cameras": ["unknown"]},
+        {"hole_filling_mode": "other"},
     ],
 )
 def test_invalid_depth_options(options):
@@ -425,7 +436,10 @@ def test_malformed_camera_frame_fails_explicitly():
 
 
 def test_record_factories_are_local_and_cameras_close_on_error(monkeypatch):
-    config = parse_config("--depth.enable=true", "--depth.serials={head: HEAD, wrist: WRIST}")
+    config = parse_config(
+        "--depth.enable=true",
+        "--depth.serials={head: HEAD, wrist: WRIST}",
+    )
     devices = SimpleNamespace(get_device_by_serial_number=lambda serial: serial)
     monkeypatch.setitem(
         sys.modules,
@@ -447,6 +461,8 @@ def test_record_factories_are_local_and_cameras_close_on_error(monkeypatch):
     def fake_record(config):
         robot = make_robot_from_config(config.robot)
         assert isinstance(robot.cameras["head"], OrbbecRGBDCamera)
+        assert robot.cameras["head"].hole_filling_mode == "FURTHEST"
+        assert robot.cameras["wrist"].hole_filling_mode is None
         assert issubclass(LeRobotDataset, DepthDatasetMixin)
         raise RuntimeError("record failure")
 
@@ -520,6 +536,83 @@ def test_sdk_stream_setup_and_cleanup(fail_start, align_to_color):
     pipeline.stop.assert_called_once()
     assert not camera.is_connected
     assert camera.align_filter is None
+
+
+@pytest.mark.parametrize("align_to_color", [False, True])
+@pytest.mark.parametrize("name", ["head", "wrist"])
+def test_hole_filling_only_applies_to_selected_camera(tmp_path, align_to_color, name):
+    from unittest.mock import Mock
+
+    sdk = Mock()
+    pipeline = sdk.Pipeline.return_value
+    profile = pipeline.get_stream_profile_list.return_value.get_video_stream_profile.return_value
+    profile.get_intrinsic.return_value = SimpleNamespace(width=3, height=2, fx=1.0, fy=1.0, cx=1.0, cy=1.0)
+    frames = fake_frames(2000 if align_to_color else 1000)
+    depth = frames.get_depth_frame()
+    frames.get_depth_frame = lambda: depth
+    sdk.AlignFilter.return_value.process.return_value = frames
+    sdk.HoleFillingFilter.return_value.process.return_value.as_depth_frame.return_value = fake_frames(
+        3000
+    ).get_depth_frame()
+    pipeline.start.side_effect = lambda config, callback: callback(frames)
+    camera = OrbbecRGBDCamera(
+        sdk,
+        object(),
+        OpenCVCameraConfig(index_or_path=0, width=3, height=2, fps=30),
+        DepthRecordConfig(align_to_color=align_to_color, hole_filling_cameras=["head"]),
+        "SERIAL",
+        name=name,
+    )
+    try:
+        camera.connect()
+        expected = sample(3000 if name == "head" else (2000 if align_to_color else 1000))["depth"]
+        np.testing.assert_array_equal(camera.consumed["depth"], expected)
+        if name == "head":
+            sdk.HoleFillingFilter.return_value.set_filling_mode.assert_called_once_with(
+                sdk.OBHoleFillingMode.FURTHEST
+            )
+            sdk.HoleFillingFilter.return_value.enable.assert_called_once_with(True)
+            sdk.HoleFillingFilter.return_value.process.assert_called_once_with(depth)
+        else:
+            sdk.HoleFillingFilter.assert_not_called()
+        assert camera.consumed["metadata"]["hole_filling_mode"] == camera.hole_filling_mode
+        dataset = create_dataset(tmp_path, {name: camera})
+        try:
+            add_frame(dataset)
+            dataset.save_episode()
+            episode = dataset.root / "depth/episode_000000"
+            saved = cv2.imread(str(episode / name / "frame_000000.png"), cv2.IMREAD_UNCHANGED)
+            np.testing.assert_array_equal(saved, expected)
+            metadata = json.loads((episode / "frames.jsonl").read_text())["cameras"][name]
+            assert metadata["hole_filling_mode"] == camera.hole_filling_mode
+            assert (
+                json.loads((episode / "cameras.json").read_text())[name]["hole_filling_mode"]
+                == camera.hole_filling_mode
+            )
+        finally:
+            dataset.finalize()
+    finally:
+        camera.disconnect()
+    assert camera.hole_filling_filter is None
+
+
+def test_missing_filled_frame_does_not_record_unfiltered_depth():
+    from unittest.mock import Mock
+
+    camera = OrbbecRGBDCamera(
+        None,
+        None,
+        OpenCVCameraConfig(index_or_path=0, width=3, height=2, fps=30),
+        DepthRecordConfig(align_to_color=False, hole_filling_cameras=["head"]),
+        "SERIAL",
+        name="head",
+    )
+    camera.hole_filling_filter = Mock()
+    camera.hole_filling_filter.process.return_value = None
+    camera._on_frames(fake_frames())
+    with pytest.raises(TimeoutError, match="no fresh RGB-D"):
+        camera.async_read(timeout_ms=1)
+    assert camera.consumed is None
 
 
 @pytest.mark.parametrize("rotation", list(Cv2Rotation))

@@ -1,0 +1,65 @@
+{
+  "head": {
+    "serial": "CP9KB5300030",
+    "calibration": {
+      "color_intrinsics": {
+        "width": 640,
+        "height": 480,
+        "fx": 460.1139831542969,
+        "fy": 460.1419372558594,
+        "cx": 324.2638244628906,
+        "cy": 241.45350646972656
+      },
+      "depth_intrinsics": {
+        "width": 640,
+        "height": 480,
+        "fx": 460.1139831542969,
+        "fy": 460.1419372558594,
+        "cx": 324.2638244628906,
+        "cy": 241.45350646972656
+      },
+      "native_depth_intrinsics": {
+        "width": 640,
+        "height": 480,
+        "fx": 373.410400390625,
+        "fy": 373.410400390625,
+        "cx": 315.8000183105469,
+        "cy": 240.5
+      },
+      "color_rotation": 0,
+      "depth_rotation": 0,
+      "aligned_to_color": true,
+      "alignment_mode": "software",
+      "hole_filling_mode": "FURTHEST",
+      "hole_filling_stage": "after_alignment"
+    },
+    "metadata": {
+      "serial": "CP9KB5300030",
+      "depth_scale_mm": 1.0,
+      "color_timestamp_ms": 17725115.0,
+      "depth_timestamp_ms": 17725115.0,
+      "host_monotonic_s": 87989.049814052,
+      "aligned_to_color": true,
+      "alignment_mode": "software",
+      "hole_filling_mode": "FURTHEST"
+    },
+    "frames_sampled": 60,
+    "observed_fps": 29.97584682913923,
+    "mean_statistics": {
+      "zero_fraction_before": 0.030928548177083334,
+      "zero_fraction_after": 0.00042073567708333335,
+      "filled_pixels": 9372.0,
+      "changed_valid_pixels": 0.0
+    },
+    "saved_frame_statistics": {
+      "zero_fraction_before": 0.030738932291666667,
+      "zero_fraction_after": 0.0004557291666666667,
+      "filled_pixels": 9303,
+      "changed_valid_pixels": 0
+    },
+    "visualization_range_mm": [
+      0,
+      3000
+    ]
+  }
+}

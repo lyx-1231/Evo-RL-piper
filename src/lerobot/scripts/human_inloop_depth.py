@@ -29,6 +29,8 @@ class DepthRecordConfig:
     fps: int = 30
     align_to_color: bool = True
     timeout_s: float = 3.0
+    hole_filling_cameras: list[str] | None = None
+    hole_filling_mode: str = "FURTHEST"
 
     def __post_init__(self):
         if not self.cameras or len(set(self.cameras)) != len(self.cameras):
@@ -39,6 +41,16 @@ class DepthRecordConfig:
             raise ValueError("`depth.serials` contains names missing from `depth.cameras`.")
         if any(not serial.strip() for serial in self.serials.values()):
             raise ValueError("Depth camera serial numbers cannot be empty.")
+        if self.hole_filling_cameras is None:
+            self.hole_filling_cameras = ["head"] if "head" in self.cameras else []
+        if len(set(self.hole_filling_cameras)) != len(self.hole_filling_cameras) or any(
+            not re.fullmatch(r"[A-Za-z0-9_-]+", name) for name in self.hole_filling_cameras
+        ):
+            raise ValueError("`depth.hole_filling_cameras` must contain distinct valid camera names.")
+        if set(self.hole_filling_cameras) - set(self.cameras):
+            raise ValueError("`depth.hole_filling_cameras` contains names missing from `depth.cameras`.")
+        if self.hole_filling_mode not in {"TOP", "NEAREST", "FURTHEST"}:
+            raise ValueError("`depth.hole_filling_mode` must be TOP, NEAREST or FURTHEST.")
         if (
             min(self.width, self.height, self.fps) <= 0
             or not np.isfinite(self.timeout_s)
@@ -71,7 +83,15 @@ def _intrinsics(profile) -> dict:
 
 
 class OrbbecRGBDCamera:
-    def __init__(self, sdk, device, camera_config, depth_config: DepthRecordConfig, serial: str):
+    def __init__(
+        self,
+        sdk,
+        device,
+        camera_config,
+        depth_config: DepthRecordConfig,
+        serial: str,
+        name: str | None = None,
+    ):
         self.sdk = sdk
         self.device = device
         self.config = camera_config
@@ -82,6 +102,10 @@ class OrbbecRGBDCamera:
         self.fps = camera_config.fps
         self.pipeline = None
         self.align_filter = None
+        self.hole_filling_filter = None
+        self.hole_filling_mode = (
+            depth_config.hole_filling_mode if name in depth_config.hole_filling_cameras else None
+        )
         self.is_connected = False
         self.condition = Condition()
         self.latest = None
@@ -121,6 +145,7 @@ class OrbbecRGBDCamera:
                 "depth_rotation": self.config.rotation.value if self.depth_config.align_to_color else 0,
                 "aligned_to_color": self.depth_config.align_to_color,
                 "alignment_mode": "software" if self.depth_config.align_to_color else "none",
+                "hole_filling_mode": self.hole_filling_mode,
             }
             config.enable_stream(color_profile)
             config.enable_stream(depth_profile)
@@ -128,6 +153,12 @@ class OrbbecRGBDCamera:
             if self.depth_config.align_to_color:
                 self.align_filter = sdk.AlignFilter(align_to_stream=sdk.OBStreamType.COLOR_STREAM)
                 self.align_filter.set_match_target_resolution(True)
+            if self.hole_filling_mode is not None:
+                self.hole_filling_filter = sdk.HoleFillingFilter()
+                self.hole_filling_filter.set_filling_mode(
+                    getattr(sdk.OBHoleFillingMode, self.hole_filling_mode)
+                )
+                self.hole_filling_filter.enable(True)
             config.set_frame_aggregate_output_mode(sdk.OBFrameAggregateOutputMode.FULL_FRAME_REQUIRE)
             self.pipeline.enable_frame_sync()
             self.pipeline.start(config, self._on_frames)
@@ -141,9 +172,10 @@ class OrbbecRGBDCamera:
                 f"Check supported profiles, USB bandwidth and camera ownership: {exc}"
             ) from exc
         logging.info(
-            "Orbbec %s connected with RGB and uint16 depth; depth-to-color alignment: %s.",
+            "Orbbec %s connected with RGB and uint16 depth; depth-to-color alignment: %s; hole filling: %s.",
             self.serial,
             self.calibration["alignment_mode"],
+            self.hole_filling_mode or "disabled",
         )
 
     def _on_frames(self, frames):
@@ -164,6 +196,11 @@ class OrbbecRGBDCamera:
                 depth = frames.get_depth_frame()
                 if color is None or depth is None:
                     return
+            if self.hole_filling_filter is not None:
+                filled = self.hole_filling_filter.process(depth)
+                if filled is None:
+                    return
+                depth = filled.as_depth_frame()
             bgr = cv2.imdecode(np.frombuffer(color.get_data(), dtype=np.uint8), cv2.IMREAD_COLOR)
             if bgr is None:
                 raise ValueError("Cannot decode Orbbec MJPEG color frame.")
@@ -203,6 +240,7 @@ class OrbbecRGBDCamera:
                     "host_monotonic_s": host_monotonic_s,
                     "aligned_to_color": self.depth_config.align_to_color,
                     "alignment_mode": "software" if self.depth_config.align_to_color else "none",
+                    "hole_filling_mode": self.hole_filling_mode,
                 },
             }
             with self.condition:
@@ -239,6 +277,7 @@ class OrbbecRGBDCamera:
                 self.pipeline = None
                 self.is_connected = False
                 self.align_filter = None
+                self.hole_filling_filter = None
 
 
 def _write_depth(path: Path, depth: np.ndarray):
@@ -444,7 +483,7 @@ def record_with_depth(cfg, record_function):
         device = devices.get_device_by_serial_number(serial)
         if device is None:
             raise ValueError(f"Orbbec camera {name} with serial {serial} was not found.")
-        cameras[name] = OrbbecRGBDCamera(sdk, device, camera_configs[name], cfg.depth, serial)
+        cameras[name] = OrbbecRGBDCamera(sdk, device, camera_configs[name], cfg.depth, serial, name=name)
     dataset_class = record_function.__globals__["LeRobotDataset"]
     robot_factory = record_function.__globals__["make_robot_from_config"]
 

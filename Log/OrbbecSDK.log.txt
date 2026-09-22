@@ -1,0 +1,1469 @@
+[09/22 20:02:17.055911][info][143000][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[09/22 20:02:17.057429][info][143000][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[09/22 20:02:17.057437][info][143000][DeviceManager.cpp:25] Current found device(s): (2)
+[09/22 20:02:17.057439][info][143000][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:02:17.057439][info][143000][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:02:17.057441][info][143000][DeviceManager.cpp:463] Enable net device enumeration: true
+[09/22 20:02:18.075871][info][143000][DeviceManager.cpp:25] Current device(s) list: (2)
+[09/22 20:02:18.075888][info][143000][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:02:18.075889][info][143000][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:02:18.076876][info][143000][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:02:18.077641][info][143000][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:02:18.077642][info][143000][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:02:18.077643][info][143000][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:02:18.077643][info][143000][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:02:18.077643][info][143000][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:02:18.077644][info][143000][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:02:18.232761][warning][143000][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 5525
+[09/22 20:02:18.232786][warning][143000][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 277
+[09/22 20:02:18.232863][warning][143000][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:02:18.238770][warning][143000][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:02:18.239959][warning][143000][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:02:18.240426][warning][143000][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:02:18.241308][warning][143000][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:02:18.258194][warning][143000][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:02:18.258934][warning][143000][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:02:18.258936][warning][143000][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:02:18.259089][warning][143000][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:02:18.259170][info][143000][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030 FW: 1.4.60
+[09/22 20:02:18.259823][info][143000][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:02:18.260569][info][143000][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:02:18.260571][info][143000][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:02:18.260571][info][143000][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:02:18.260572][info][143000][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:02:18.260572][info][143000][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:02:18.260572][info][143000][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:02:18.415555][warning][143000][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 5525
+[09/22 20:02:18.415575][warning][143000][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 277
+[09/22 20:02:18.415644][warning][143000][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:02:18.436850][warning][143000][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:02:18.438118][warning][143000][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:02:18.438674][warning][143000][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:02:18.439543][warning][143000][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:02:18.477850][warning][143000][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:02:18.478622][warning][143000][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:02:18.478625][warning][143000][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:02:18.478778][warning][143000][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:02:18.478861][info][143000][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059 FW: 1.4.60
+[09/22 20:02:19.130078][info][143000][Pipeline.cpp:54] [CP9KB5300030] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300030}, @0x564A29946000
+[09/22 20:02:19.130370][info][143000][Pipeline.cpp:228] [CP9KB5300030] Check and set config done!
+[09/22 20:02:19.130574][info][143000][Pipeline.cpp:266] [CP9KB5300030] Try to start streams!
+[09/22 20:02:19.130588][info][143000][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:02:19.130601][info][143000][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:02:19.130604][info][143000][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:02:19.131304][info][143000][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:02:19.131312][info][143000][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:02:19.131316][info][143000][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:02:19.131988][info][143000][Pipeline.cpp:293] [CP9KB5300030] Start streams done!
+[09/22 20:02:19.131989][info][143000][Pipeline.cpp:250] [CP9KB5300030] Pipeline start done!
+[09/22 20:02:19.220873][info][143283][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:02:19.651053][info][143281][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:02:19.660406][info][143000][Pipeline.cpp:54] [CP9KB5300059] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300059}, @0x564A29A190B0
+[09/22 20:02:19.660561][info][143000][Pipeline.cpp:228] [CP9KB5300059] Check and set config done!
+[09/22 20:02:19.660722][info][143000][Pipeline.cpp:266] [CP9KB5300059] Try to start streams!
+[09/22 20:02:19.660731][info][143000][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:02:19.660743][info][143000][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:02:19.660745][info][143000][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:02:19.661528][info][143000][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:02:19.661535][info][143000][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:02:19.661538][info][143000][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:02:19.662352][info][143000][Pipeline.cpp:293] [CP9KB5300059] Start streams done!
+[09/22 20:02:19.662354][info][143000][Pipeline.cpp:250] [CP9KB5300059] Pipeline start done!
+[09/22 20:02:19.750611][info][143322][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:02:20.181795][info][143320][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:02:24.224101][info][143283][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=30.163803fps
+[09/22 20:02:24.227807][info][143285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=30.151758fps
+[09/22 20:02:24.653803][info][143281][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=30.169830fps
+[09/22 20:02:24.653839][info][143288][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=30.169830fps
+[09/22 20:02:24.753935][info][143322][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=30.163803fps
+[09/22 20:02:24.758399][info][143325][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=30.151758fps
+[09/22 20:02:25.184960][info][143320][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=30.169830fps
+[09/22 20:02:25.185013][info][143330][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=30.169830fps
+[09/22 20:02:29.227288][info][143283][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:02:29.229956][info][143285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.976019fps
+[09/22 20:02:29.657089][info][143281][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:02:29.657176][info][143288][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:02:29.757189][info][143322][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:02:29.760112][info][143325][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:02:30.188179][info][143320][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:02:30.188228][info][143330][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:02:34.230539][info][143283][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:02:34.233495][info][143285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:02:34.660336][info][143281][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:02:34.660401][info][143288][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:02:34.760417][info][143322][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:02:34.763484][info][143325][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:02:35.191507][info][143320][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:02:35.191590][info][143330][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:02:39.233815][info][143283][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:02:39.236515][info][143285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:02:39.663601][info][143281][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:02:39.663652][info][143288][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:02:39.763649][info][143322][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:02:39.766514][info][143325][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:02:40.194690][info][143320][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:02:40.194869][info][143330][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:02:44.237112][info][143283][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:02:44.241378][info][143285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 20:02:44.666813][info][143281][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:02:44.666854][info][143288][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:02:44.766830][info][143322][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:02:44.769443][info][143325][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:02:45.197922][info][143320][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:02:45.197995][info][143330][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:02:49.240351][info][143283][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:02:49.243414][info][143285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:02:49.670147][info][143281][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:02:49.670213][info][143288][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:02:49.770060][info][143322][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:02:49.772550][info][143325][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:02:50.201153][info][143320][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:02:50.201218][info][143330][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:02:54.243590][info][143283][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:02:54.246350][info][143285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:02:54.673384][info][143281][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:02:54.673420][info][143288][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:02:54.773294][info][143322][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:02:54.776193][info][143325][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:02:55.204388][info][143320][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:02:55.204451][info][143330][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:02:59.246856][info][143283][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:02:59.249570][info][143285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:02:59.677341][info][143281][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.958059fps
+[09/22 20:02:59.677389][info][143288][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.958059fps
+[09/22 20:02:59.776555][info][143322][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:02:59.779338][info][143325][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:03:00.209295][info][143320][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.958059fps
+[09/22 20:03:00.209331][info][143330][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.958059fps
+[09/22 20:03:01.215778][info][143000][Pipeline.cpp:367] [CP9KB5300030] Try to stop pipeline!
+[09/22 20:03:01.215787][info][143000][Pipeline.cpp:343] [CP9KB5300030] Try to stop streams!
+[09/22 20:03:01.215801][info][143000][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:03:01.266792][info][143000][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:03:01.266912][info][143000][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Depth
+[09/22 20:03:01.266922][info][143000][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:03:01.309125][info][143000][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:03:01.309220][info][143000][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Color
+[09/22 20:03:01.309221][info][143000][Pipeline.cpp:363] [CP9KB5300030] Stop streams done!
+[09/22 20:03:01.309339][info][143000][Pipeline.cpp:393] [CP9KB5300030] Stop pipeline done!
+[09/22 20:03:01.309351][info][143000][Pipeline.cpp:65] [CP9KB5300030] Pipeline destroyed! @0x564A29946000
+[09/22 20:03:01.309388][info][143000][Pipeline.cpp:367] [CP9KB5300059] Try to stop pipeline!
+[09/22 20:03:01.309389][info][143000][Pipeline.cpp:343] [CP9KB5300059] Try to stop streams!
+[09/22 20:03:01.309395][info][143000][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:03:01.357938][info][143000][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:03:01.358034][info][143000][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Depth
+[09/22 20:03:01.358040][info][143000][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:03:01.397068][info][143000][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:03:01.397157][info][143000][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Color
+[09/22 20:03:01.397158][info][143000][Pipeline.cpp:363] [CP9KB5300059] Stop streams done!
+[09/22 20:03:01.397297][info][143000][Pipeline.cpp:393] [CP9KB5300059] Stop pipeline done!
+[09/22 20:03:01.397311][info][143000][Pipeline.cpp:65] [CP9KB5300059] Pipeline destroyed! @0x564A29A190B0
+[09/22 20:03:01.838948][info][143000][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:03:01.839691][info][143000][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:03:01.839692][info][143000][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:03:01.839729][info][143000][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:03:01.840769][info][143000][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:03:01.840772][info][143000][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:03:01.841848][info][143000][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 20:03:01.842602][info][143000][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:03:01.842603][info][143000][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:03:01.842674][info][143000][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 20:03:01.843790][info][143000][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:03:01.843792][info][143000][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:05:27.522465][info][143740][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[09/22 20:05:27.523720][info][143740][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[09/22 20:05:27.523728][info][143740][DeviceManager.cpp:25] Current found device(s): (2)
+[09/22 20:05:27.523730][info][143740][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:05:27.523730][info][143740][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:05:27.523732][info][143740][DeviceManager.cpp:463] Enable net device enumeration: true
+[09/22 20:05:28.526550][info][143740][DeviceManager.cpp:25] Current device(s) list: (2)
+[09/22 20:05:28.526568][info][143740][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:05:28.526569][info][143740][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:05:28.527422][info][143740][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:05:28.528175][info][143740][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:05:28.528176][info][143740][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:05:28.528177][info][143740][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:05:28.528177][info][143740][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:05:28.528177][info][143740][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:05:28.528177][info][143740][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:05:28.684375][warning][143740][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 5525
+[09/22 20:05:28.684392][warning][143740][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 277
+[09/22 20:05:28.684465][warning][143740][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:05:28.690234][warning][143740][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:05:28.691525][warning][143740][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:05:28.692010][warning][143740][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:05:28.692821][warning][143740][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:05:28.709473][warning][143740][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:05:28.710192][warning][143740][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:05:28.710195][warning][143740][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:05:28.710356][warning][143740][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:05:28.710436][info][143740][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030 FW: 1.4.60
+[09/22 20:05:28.711089][info][143740][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:05:28.711869][info][143740][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:05:28.711871][info][143740][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:05:28.711871][info][143740][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:05:28.711871][info][143740][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:05:28.711872][info][143740][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:05:28.711872][info][143740][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:05:28.866671][warning][143740][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 5525
+[09/22 20:05:28.866687][warning][143740][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 277
+[09/22 20:05:28.866757][warning][143740][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:05:28.887830][warning][143740][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:05:28.888992][warning][143740][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:05:28.889461][warning][143740][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:05:28.890231][warning][143740][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:05:28.928067][warning][143740][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:05:28.928795][warning][143740][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:05:28.928798][warning][143740][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:05:28.928946][warning][143740][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:05:28.929022][info][143740][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059 FW: 1.4.60
+[09/22 20:05:29.582374][info][143740][Pipeline.cpp:54] [CP9KB5300030] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300030}, @0x59D356AAB9C0
+[09/22 20:05:29.582625][info][143740][Pipeline.cpp:228] [CP9KB5300030] Check and set config done!
+[09/22 20:05:29.582832][info][143740][Pipeline.cpp:266] [CP9KB5300030] Try to start streams!
+[09/22 20:05:29.582843][info][143740][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:05:29.582853][info][143740][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:05:29.582856][info][143740][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:05:29.583572][info][143740][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:05:29.583581][info][143740][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:05:29.583586][info][143740][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:05:29.584430][info][143740][Pipeline.cpp:293] [CP9KB5300030] Start streams done!
+[09/22 20:05:29.584432][info][143740][Pipeline.cpp:250] [CP9KB5300030] Pipeline start done!
+[09/22 20:05:29.673339][info][143994][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:05:30.103973][info][143992][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:05:30.113130][info][143740][Pipeline.cpp:54] [CP9KB5300059] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300059}, @0x59D356B7E270
+[09/22 20:05:30.113392][info][143740][Pipeline.cpp:228] [CP9KB5300059] Check and set config done!
+[09/22 20:05:30.113534][info][143740][Pipeline.cpp:266] [CP9KB5300059] Try to start streams!
+[09/22 20:05:30.113545][info][143740][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:05:30.113555][info][143740][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:05:30.113557][info][143740][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:05:30.114404][info][143740][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:05:30.114411][info][143740][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:05:30.114415][info][143740][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:05:30.115236][info][143740][Pipeline.cpp:293] [CP9KB5300059] Start streams done!
+[09/22 20:05:30.115238][info][143740][Pipeline.cpp:250] [CP9KB5300059] Pipeline start done!
+[09/22 20:05:30.203856][info][144033][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:05:30.636751][info][144031][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:05:34.676580][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=30.163803fps
+[09/22 20:05:34.679409][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=30.157780fps
+[09/22 20:05:35.106546][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=30.169830fps
+[09/22 20:05:35.106594][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=30.169830fps
+[09/22 20:05:35.207220][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=30.163803fps
+[09/22 20:05:35.213542][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=30.133705fps
+[09/22 20:05:35.638237][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=30.175858fps
+[09/22 20:05:35.638280][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=30.175858fps
+[09/22 20:05:39.679838][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:05:39.682353][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:05:40.109804][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:05:40.109850][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:05:40.210431][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:05:40.213197][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.988007fps
+[09/22 20:05:40.641531][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:05:40.641610][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:05:44.683279][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:05:44.686085][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:05:45.113156][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:05:45.113202][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:05:45.213582][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:05:45.216375][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:05:45.644744][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:05:45.644791][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:05:49.686560][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:05:49.689797][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:05:50.116388][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:05:50.116453][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:05:50.216923][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:05:50.220882][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.958059fps
+[09/22 20:05:50.647947][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:05:50.647981][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:05:54.689773][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:05:54.693708][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 20:05:55.119598][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:05:55.119630][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:05:55.220066][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:05:55.223753][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:05:55.651214][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:05:55.651267][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:05:59.692939][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:05:59.696080][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:06:00.122883][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:00.122977][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:00.223327][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:00.225831][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:06:00.654419][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:00.654441][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:04.696168][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:06:04.698892][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:06:05.126106][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:06:05.126157][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:06:05.226573][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:05.229418][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:06:05.657758][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:06:05.657805][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:06:09.699397][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:09.702135][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:06:10.129395][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:10.129452][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:10.229907][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:10.234197][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.958059fps
+[09/22 20:06:10.660929][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:10.660993][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:14.702883][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:14.706280][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:06:15.132630][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:15.132719][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:15.233042][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:06:15.236169][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:06:15.664176][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:15.664212][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:19.706034][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:19.708909][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:06:20.135896][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:20.135945][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:20.236283][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:20.239378][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:06:20.667418][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:20.667461][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:24.709133][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:06:24.712673][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:06:25.139206][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:25.139321][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:25.239509][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:25.242835][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:06:25.670642][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:06:25.670699][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:06:29.712457][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:29.715835][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:06:30.142417][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:06:30.142465][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:06:30.242793][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:30.245385][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:06:30.673880][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:30.673931][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:34.715797][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:34.720137][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 20:06:35.145681][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:35.145732][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:35.246034][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:06:35.249218][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.958059fps
+[09/22 20:06:35.677243][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:35.677359][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:39.718956][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:39.721793][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.976019fps
+[09/22 20:06:40.148947][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:40.148989][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:40.249227][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:40.252433][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:06:40.680381][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:06:40.680442][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:44.722233][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:06:44.725109][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:06:45.152196][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:45.152243][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:45.252445][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:45.255148][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:06:45.683949][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.958059fps
+[09/22 20:06:45.684048][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:49.725463][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:49.728468][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:06:50.155490][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:06:50.155573][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:06:50.255680][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:50.259409][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:06:50.686857][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:06:50.686907][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:06:54.728959][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:54.732629][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 20:06:55.158907][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:55.159093][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:55.259003][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:06:55.261616][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:06:55.690085][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:06:55.690142][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:06:59.732088][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:06:59.736732][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:07:00.162152][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:07:00.162235][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:07:00.262231][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:07:00.265274][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:07:00.693392][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:07:00.693452][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:07:04.735314][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:07:04.738323][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.976019fps
+[09/22 20:07:05.165258][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:07:05.165369][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:07:05.265498][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:07:05.268157][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:07:05.696571][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:07:05.696625][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:07:09.738543][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:07:09.741950][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 20:07:10.168553][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:07:10.168638][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:07:10.268730][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:07:10.271458][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:07:10.699772][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:07:10.699919][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:07:14.742022][info][143994][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:07:14.745511][info][143996][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:07:15.171883][info][143992][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:07:15.171960][info][143999][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:07:15.272296][info][144033][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:07:15.276246][info][144037][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.952078fps
+[09/22 20:07:15.703455][info][144031][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:07:15.703510][info][144042][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:07:19.164709][info][143740][Pipeline.cpp:367] [CP9KB5300030] Try to stop pipeline!
+[09/22 20:07:19.164717][info][143740][Pipeline.cpp:343] [CP9KB5300030] Try to stop streams!
+[09/22 20:07:19.164735][info][143740][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:07:19.213860][info][143740][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:07:19.213968][info][143740][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Depth
+[09/22 20:07:19.213978][info][143740][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:07:19.255662][info][143740][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:07:19.255762][info][143740][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Color
+[09/22 20:07:19.255764][info][143740][Pipeline.cpp:363] [CP9KB5300030] Stop streams done!
+[09/22 20:07:19.255906][info][143740][Pipeline.cpp:393] [CP9KB5300030] Stop pipeline done!
+[09/22 20:07:19.255917][info][143740][Pipeline.cpp:65] [CP9KB5300030] Pipeline destroyed! @0x59D356AAB9C0
+[09/22 20:07:19.256010][info][143740][Pipeline.cpp:367] [CP9KB5300059] Try to stop pipeline!
+[09/22 20:07:19.256013][info][143740][Pipeline.cpp:343] [CP9KB5300059] Try to stop streams!
+[09/22 20:07:19.256021][info][143740][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:07:19.306875][info][143740][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:07:19.306949][info][143740][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Depth
+[09/22 20:07:19.306955][info][143740][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:07:19.347119][info][143740][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:07:19.347187][info][143740][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Color
+[09/22 20:07:19.347188][info][143740][Pipeline.cpp:363] [CP9KB5300059] Stop streams done!
+[09/22 20:07:19.347324][info][143740][Pipeline.cpp:393] [CP9KB5300059] Stop pipeline done!
+[09/22 20:07:19.347340][info][143740][Pipeline.cpp:65] [CP9KB5300059] Pipeline destroyed! @0x59D356B7E270
+[09/22 20:07:19.795698][info][143740][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:07:19.796496][info][143740][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:07:19.796499][info][143740][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:07:19.796557][info][143740][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:07:19.798003][info][143740][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:07:19.798007][info][143740][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:07:19.799080][info][143740][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 20:07:19.799801][info][143740][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:07:19.799803][info][143740][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:07:19.799861][info][143740][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 20:07:19.800962][info][143740][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:07:19.800965][info][143740][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:13:03.184816][info][144877][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[09/22 20:13:03.186100][info][144877][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[09/22 20:13:03.186109][info][144877][DeviceManager.cpp:25] Current found device(s): (2)
+[09/22 20:13:03.186110][info][144877][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:13:03.186110][info][144877][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:13:03.186112][info][144877][DeviceManager.cpp:463] Enable net device enumeration: true
+[09/22 20:13:04.187876][info][144877][DeviceManager.cpp:25] Current device(s) list: (2)
+[09/22 20:13:04.187892][info][144877][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:13:04.187893][info][144877][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:13:04.188776][info][144877][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:13:04.189648][info][144877][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:13:04.189651][info][144877][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:13:04.189651][info][144877][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:13:04.189652][info][144877][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:13:04.189652][info][144877][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:13:04.189653][info][144877][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:13:04.344763][warning][144877][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 5525
+[09/22 20:13:04.344784][warning][144877][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 277
+[09/22 20:13:04.344866][warning][144877][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:13:04.350858][warning][144877][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:13:04.352022][warning][144877][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:13:04.352545][warning][144877][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:13:04.353353][warning][144877][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:13:04.370186][warning][144877][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:13:04.370854][warning][144877][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:13:04.370856][warning][144877][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:13:04.371008][warning][144877][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:13:04.371083][info][144877][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030 FW: 1.4.60
+[09/22 20:13:04.371706][info][144877][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:13:04.372436][info][144877][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:13:04.372438][info][144877][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:13:04.372439][info][144877][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:13:04.372439][info][144877][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:13:04.372439][info][144877][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:13:04.372440][info][144877][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:13:04.527465][warning][144877][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 5525
+[09/22 20:13:04.527487][warning][144877][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 277
+[09/22 20:13:04.527556][warning][144877][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:13:04.548702][warning][144877][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:13:04.549835][warning][144877][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:13:04.550309][warning][144877][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:13:04.551061][warning][144877][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:13:04.588765][warning][144877][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:13:04.589424][warning][144877][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:13:04.589426][warning][144877][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:13:04.589576][warning][144877][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:13:04.589646][info][144877][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059 FW: 1.4.60
+[09/22 20:13:05.240942][info][144877][Pipeline.cpp:54] [CP9KB5300030] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300030}, @0x557312252F20
+[09/22 20:13:05.241203][info][144877][Pipeline.cpp:228] [CP9KB5300030] Check and set config done!
+[09/22 20:13:05.241392][info][144877][Pipeline.cpp:266] [CP9KB5300030] Try to start streams!
+[09/22 20:13:05.241403][info][144877][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:13:05.241413][info][144877][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:13:05.241415][info][144877][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:13:05.242100][info][144877][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:13:05.242108][info][144877][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:13:05.242112][info][144877][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:13:05.242789][info][144877][Pipeline.cpp:293] [CP9KB5300030] Start streams done!
+[09/22 20:13:05.242790][info][144877][Pipeline.cpp:250] [CP9KB5300030] Pipeline start done!
+[09/22 20:13:05.331835][info][145129][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:13:05.761964][info][145127][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:13:05.771176][info][144877][Pipeline.cpp:54] [CP9KB5300059] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300059}, @0x55731232C9A0
+[09/22 20:13:05.771463][info][144877][Pipeline.cpp:228] [CP9KB5300059] Check and set config done!
+[09/22 20:13:05.771622][info][144877][Pipeline.cpp:266] [CP9KB5300059] Try to start streams!
+[09/22 20:13:05.771633][info][144877][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:13:05.771643][info][144877][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:13:05.771646][info][144877][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:13:05.772415][info][144877][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:13:05.772423][info][144877][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:13:05.772426][info][144877][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:13:05.773164][info][144877][Pipeline.cpp:293] [CP9KB5300059] Start streams done!
+[09/22 20:13:05.773165][info][144877][Pipeline.cpp:250] [CP9KB5300059] Pipeline start done!
+[09/22 20:13:05.861452][info][145167][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:13:06.294184][info][145165][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:13:10.334992][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=30.163803fps
+[09/22 20:13:10.338411][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=30.157780fps
+[09/22 20:13:10.764716][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=30.169830fps
+[09/22 20:13:10.764781][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=30.169830fps
+[09/22 20:13:10.864905][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=30.163803fps
+[09/22 20:13:10.868696][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=30.151758fps
+[09/22 20:13:11.295825][info][145165][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=30.175858fps
+[09/22 20:13:11.295907][info][145176][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=30.175858fps
+[09/22 20:13:15.338178][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:15.340812][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:13:15.767937][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:15.767969][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:15.868003][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:15.870684][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.976019fps
+[09/22 20:13:16.299056][info][145165][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:16.299120][info][145176][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:20.341459][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:13:20.344344][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:13:20.771239][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:13:20.771290][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:20.871189][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:13:20.873669][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:13:21.302279][info][145165][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:21.302322][info][145176][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:25.344733][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:25.348571][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 20:13:25.774451][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:25.774573][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:13:25.874483][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:25.876886][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:13:26.305539][info][145165][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:26.305594][info][145176][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:30.348036][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:30.350943][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:13:30.777735][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:30.777814][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:30.877744][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:30.880218][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:13:31.308760][info][145165][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:13:31.308817][info][145176][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:13:35.351246][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:35.353957][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:13:35.781015][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:35.781059][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:35.880988][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:35.884097][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:13:36.312058][info][145165][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:36.312129][info][145176][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:40.354499][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:40.357472][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:13:40.784365][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:40.784405][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:40.884193][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:13:40.887491][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:13:41.315389][info][145165][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:41.315462][info][145176][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:45.357804][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:13:45.361131][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:13:45.787558][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:13:45.787630][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:13:45.887405][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:45.890268][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:13:46.318514][info][145165][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:46.318585][info][145176][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:50.361008][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:50.363708][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:13:50.790793][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:50.790929][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:50.890637][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:50.892955][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:13:51.321728][info][145165][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:13:51.321796][info][145176][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:13:55.364467][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:55.367263][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:13:55.794279][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:55.794374][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:13:55.893914][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:13:55.896635][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:13:56.325006][info][145165][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:13:56.325061][info][145176][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:14:00.367587][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:14:00.370834][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:14:00.797302][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:14:00.797354][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:14:00.897208][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:14:00.900019][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:14:01.328229][info][145165][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:14:01.328288][info][145176][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:14:05.370857][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:14:05.374055][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:14:05.800526][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:14:05.800563][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:14:05.900448][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:14:05.903176][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:14:06.331453][info][145165][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:14:06.331529][info][145176][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:14:10.374077][info][145129][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:14:10.376830][info][145131][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:14:10.804018][info][145127][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:14:10.804066][info][145133][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:14:10.850347][info][144877][Pipeline.cpp:367] [CP9KB5300030] Try to stop pipeline!
+[09/22 20:14:10.850356][info][144877][Pipeline.cpp:343] [CP9KB5300030] Try to stop streams!
+[09/22 20:14:10.850373][info][144877][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:14:10.901285][info][144877][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:14:10.901381][info][144877][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Depth
+[09/22 20:14:10.901390][info][144877][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:14:10.908071][info][145167][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.940119fps
+[09/22 20:14:10.910809][info][145170][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.940119fps
+[09/22 20:14:10.943320][info][144877][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:14:10.943393][info][144877][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Color
+[09/22 20:14:10.943395][info][144877][Pipeline.cpp:363] [CP9KB5300030] Stop streams done!
+[09/22 20:14:10.943524][info][144877][Pipeline.cpp:393] [CP9KB5300030] Stop pipeline done!
+[09/22 20:14:10.943533][info][144877][Pipeline.cpp:65] [CP9KB5300030] Pipeline destroyed! @0x557312252F20
+[09/22 20:14:10.943575][info][144877][Pipeline.cpp:367] [CP9KB5300059] Try to stop pipeline!
+[09/22 20:14:10.943578][info][144877][Pipeline.cpp:343] [CP9KB5300059] Try to stop streams!
+[09/22 20:14:10.943585][info][144877][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:14:10.992283][info][144877][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:14:10.992371][info][144877][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Depth
+[09/22 20:14:10.992377][info][144877][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:14:11.031332][info][144877][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:14:11.031409][info][144877][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Color
+[09/22 20:14:11.031410][info][144877][Pipeline.cpp:363] [CP9KB5300059] Stop streams done!
+[09/22 20:14:11.031534][info][144877][Pipeline.cpp:393] [CP9KB5300059] Stop pipeline done!
+[09/22 20:14:11.031547][info][144877][Pipeline.cpp:65] [CP9KB5300059] Pipeline destroyed! @0x55731232C9A0
+[09/22 20:14:11.564626][info][144877][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:14:11.565411][info][144877][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:14:11.565413][info][144877][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:14:11.565470][info][144877][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:14:11.566646][info][144877][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:14:11.566651][info][144877][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:14:11.567524][info][144877][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 20:14:11.568229][info][144877][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:14:11.568232][info][144877][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:14:11.568302][info][144877][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 20:14:11.569455][info][144877][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:14:11.569456][info][144877][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:14:47.319053][info][145560][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[09/22 20:14:47.320297][info][145560][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[09/22 20:14:47.320304][info][145560][DeviceManager.cpp:25] Current found device(s): (2)
+[09/22 20:14:47.320306][info][145560][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:14:47.320306][info][145560][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:14:47.320308][info][145560][DeviceManager.cpp:463] Enable net device enumeration: true
+[09/22 20:14:48.322747][info][145560][DeviceManager.cpp:25] Current device(s) list: (2)
+[09/22 20:14:48.322762][info][145560][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:14:48.322763][info][145560][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:14:48.323734][info][145560][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:14:48.324585][info][145560][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:14:48.324589][info][145560][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:14:48.324590][info][145560][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:14:48.324592][info][145560][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:14:48.324592][info][145560][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:14:48.324593][info][145560][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:14:48.480050][warning][145560][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 5525
+[09/22 20:14:48.480070][warning][145560][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 277
+[09/22 20:14:48.480149][warning][145560][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:14:48.486125][warning][145560][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:14:48.487198][warning][145560][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:14:48.487748][warning][145560][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:14:48.488651][warning][145560][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:14:48.506086][warning][145560][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:14:48.506755][warning][145560][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:14:48.506758][warning][145560][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:14:48.506913][warning][145560][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:14:48.507003][info][145560][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030 FW: 1.4.60
+[09/22 20:14:48.507715][info][145560][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:14:48.508478][info][145560][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:14:48.508480][info][145560][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:14:48.508480][info][145560][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:14:48.508481][info][145560][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:14:48.508481][info][145560][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:14:48.508482][info][145560][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:14:48.663336][warning][145560][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 5525
+[09/22 20:14:48.663362][warning][145560][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 277
+[09/22 20:14:48.663440][warning][145560][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:14:48.685237][warning][145560][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:14:48.686379][warning][145560][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:14:48.686903][warning][145560][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:14:48.687793][warning][145560][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:14:48.727257][warning][145560][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:14:48.727947][warning][145560][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:14:48.727951][warning][145560][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:14:48.728105][warning][145560][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:14:48.728197][info][145560][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059 FW: 1.4.60
+[09/22 20:14:48.846960][info][145560][Pipeline.cpp:54] [CP9KB5300030] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300030}, @0x573E3A404270
+[09/22 20:14:48.847182][info][145560][Pipeline.cpp:228] [CP9KB5300030] Check and set config done!
+[09/22 20:14:48.847362][info][145560][Pipeline.cpp:266] [CP9KB5300030] Try to start streams!
+[09/22 20:14:48.847371][info][145560][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:14:48.847381][info][145560][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:14:48.847384][info][145560][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:14:48.848314][info][145560][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:14:48.848323][info][145560][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:14:48.848327][info][145560][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:14:48.849131][info][145560][Pipeline.cpp:293] [CP9KB5300030] Start streams done!
+[09/22 20:14:48.849132][info][145560][Pipeline.cpp:250] [CP9KB5300030] Pipeline start done!
+[09/22 20:14:48.938103][info][145701][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:14:49.399834][info][145699][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:14:49.411216][info][145560][Pipeline.cpp:54] [CP9KB5300059] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300059}, @0x573E3A4DE720
+[09/22 20:14:49.411404][info][145560][Pipeline.cpp:228] [CP9KB5300059] Check and set config done!
+[09/22 20:14:49.411561][info][145560][Pipeline.cpp:266] [CP9KB5300059] Try to start streams!
+[09/22 20:14:49.411571][info][145560][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:14:49.411578][info][145560][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:14:49.411580][info][145560][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:14:49.412355][info][145560][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:14:49.412362][info][145560][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:14:49.412364][info][145560][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:14:49.413178][info][145560][Pipeline.cpp:293] [CP9KB5300059] Start streams done!
+[09/22 20:14:49.413179][info][145560][Pipeline.cpp:250] [CP9KB5300059] Pipeline start done!
+[09/22 20:14:49.501690][info][145741][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:14:49.932887][info][145739][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:14:53.941259][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=30.163803fps
+[09/22 20:14:53.944520][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=30.157780fps
+[09/22 20:14:54.404224][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=30.157780fps
+[09/22 20:14:54.404268][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=30.163803fps
+[09/22 20:14:54.505056][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=30.163803fps
+[09/22 20:14:54.508637][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=30.151758fps
+[09/22 20:14:54.936114][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=30.169830fps
+[09/22 20:14:54.936171][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=30.163803fps
+[09/22 20:14:58.944453][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:14:58.947879][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:14:59.407464][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:14:59.407504][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:14:59.508241][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:14:59.510966][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:14:59.939411][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.764282fps
+[09/22 20:14:59.939464][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.770229fps
+[09/22 20:15:03.947733][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:03.951385][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:15:04.410340][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:15:04.410382][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:15:04.511461][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:04.514076][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:15:04.941706][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.770229fps
+[09/22 20:15:04.941762][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.770229fps
+[09/22 20:15:08.951031][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:15:08.954192][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:15:09.414169][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.958059fps
+[09/22 20:15:09.414213][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.958059fps
+[09/22 20:15:09.514728][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:15:09.517308][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:15:09.945840][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.958059fps
+[09/22 20:15:09.945909][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.958059fps
+[09/22 20:15:13.954310][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:13.957865][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:15:14.417453][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:14.417495][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:14.517963][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:14.520826][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:15:14.949137][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:15:14.949198][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:18.957500][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:18.960987][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:15:19.420726][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:15:19.420798][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:15:19.521220][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:19.523707][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:15:19.952340][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:19.952365][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:15:23.960809][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:23.964121][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:15:24.423968][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:24.424029][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:24.524492][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:24.527508][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.958059fps
+[09/22 20:15:24.955574][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:24.955610][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:28.964023][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:15:28.966565][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:15:29.427222][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:29.427264][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:29.527675][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:15:29.530993][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:15:29.958956][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:29.959041][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:33.967313][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:33.970073][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:15:34.430574][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:34.430667][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:34.530929][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:34.533552][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:15:34.962142][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:34.962326][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:38.970538][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:38.973013][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:15:39.433824][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:15:39.433870][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:15:39.534199][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:39.536706][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:15:39.965291][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:15:39.965338][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:15:43.973992][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:43.976663][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 20:15:44.436998][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:44.437036][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:44.537406][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:44.540186][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:15:44.968546][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:44.968589][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:48.977244][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:48.981327][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 20:15:49.440294][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:49.440350][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:49.540930][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:49.543799][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:15:49.971959][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:49.972020][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:53.980377][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:15:53.984312][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:15:54.443531][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:54.443559][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:54.543899][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:15:54.546931][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:15:54.975082][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:15:54.975118][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:15:58.983662][info][145701][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:58.986397][info][145705][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:15:59.446803][info][145699][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:15:59.446857][info][145707][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:15:59.547203][info][145741][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:15:59.550524][info][145744][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:15:59.978347][info][145739][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:15:59.978402][info][145746][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:16:01.098541][info][145560][Pipeline.cpp:367] [CP9KB5300030] Try to stop pipeline!
+[09/22 20:16:01.098550][info][145560][Pipeline.cpp:343] [CP9KB5300030] Try to stop streams!
+[09/22 20:16:01.098562][info][145560][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:16:01.149956][info][145560][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:16:01.150082][info][145560][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Depth
+[09/22 20:16:01.150094][info][145560][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:16:01.192776][info][145560][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:16:01.192949][info][145560][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Color
+[09/22 20:16:01.192950][info][145560][Pipeline.cpp:363] [CP9KB5300030] Stop streams done!
+[09/22 20:16:01.193083][info][145560][Pipeline.cpp:393] [CP9KB5300030] Stop pipeline done!
+[09/22 20:16:01.193095][info][145560][Pipeline.cpp:65] [CP9KB5300030] Pipeline destroyed! @0x573E3A404270
+[09/22 20:16:01.193123][info][145560][Pipeline.cpp:367] [CP9KB5300059] Try to stop pipeline!
+[09/22 20:16:01.193125][info][145560][Pipeline.cpp:343] [CP9KB5300059] Try to stop streams!
+[09/22 20:16:01.193132][info][145560][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:16:01.243416][info][145560][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:16:01.243519][info][145560][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Depth
+[09/22 20:16:01.243525][info][145560][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:16:01.285911][info][145560][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:16:01.285977][info][145560][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Color
+[09/22 20:16:01.285978][info][145560][Pipeline.cpp:363] [CP9KB5300059] Stop streams done!
+[09/22 20:16:01.286103][info][145560][Pipeline.cpp:393] [CP9KB5300059] Stop pipeline done!
+[09/22 20:16:01.286116][info][145560][Pipeline.cpp:65] [CP9KB5300059] Pipeline destroyed! @0x573E3A4DE720
+[09/22 20:16:01.487054][info][145560][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 20:16:01.487883][info][145560][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:16:01.487885][info][145560][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:16:01.487937][info][145560][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 20:16:01.489028][info][145560][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:16:01.489033][info][145560][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:16:01.490109][info][145560][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:16:01.490965][info][145560][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:16:01.490967][info][145560][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:16:01.491031][info][145560][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:16:01.492348][info][145560][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:16:01.492350][info][145560][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:17:41.984254][info][146247][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[09/22 20:17:41.985575][info][146247][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[09/22 20:17:41.985585][info][146247][DeviceManager.cpp:25] Current found device(s): (2)
+[09/22 20:17:41.985586][info][146247][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:17:41.985587][info][146247][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:17:41.985589][info][146247][DeviceManager.cpp:463] Enable net device enumeration: true
+[09/22 20:17:42.997816][info][146247][DeviceManager.cpp:25] Current device(s) list: (2)
+[09/22 20:17:42.997832][info][146247][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:17:42.997833][info][146247][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:17:42.998801][info][146247][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:17:42.999642][info][146247][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:17:42.999645][info][146247][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:17:42.999646][info][146247][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:17:42.999646][info][146247][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:17:42.999646][info][146247][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:17:42.999647][info][146247][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:17:43.154802][warning][146247][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 5525
+[09/22 20:17:43.154845][warning][146247][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 277
+[09/22 20:17:43.154926][warning][146247][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:17:43.160997][warning][146247][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:17:43.165585][warning][146247][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:17:43.166051][warning][146247][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:17:43.166844][warning][146247][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:17:43.184060][warning][146247][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:17:43.184735][warning][146247][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:17:43.184738][warning][146247][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:17:43.184886][warning][146247][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:17:43.184999][info][146247][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030 FW: 1.4.60
+[09/22 20:17:43.185892][info][146247][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:17:43.186905][info][146247][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:17:43.186907][info][146247][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:17:43.186908][info][146247][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:17:43.186908][info][146247][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:17:43.186908][info][146247][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:17:43.186909][info][146247][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:17:43.341754][warning][146247][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 5525
+[09/22 20:17:43.341779][warning][146247][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 277
+[09/22 20:17:43.341856][warning][146247][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:17:43.363662][warning][146247][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:17:43.364791][warning][146247][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:17:43.365265][warning][146247][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:17:43.366130][warning][146247][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:17:43.405188][warning][146247][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:17:43.405883][warning][146247][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:17:43.405885][warning][146247][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:17:43.406032][warning][146247][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:17:43.406127][info][146247][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059 FW: 1.4.60
+[09/22 20:17:43.525066][info][146247][Pipeline.cpp:54] [CP9KB5300030] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300030}, @0x5DFEA7236D40
+[09/22 20:17:43.525362][info][146247][Pipeline.cpp:228] [CP9KB5300030] Check and set config done!
+[09/22 20:17:43.525559][info][146247][Pipeline.cpp:266] [CP9KB5300030] Try to start streams!
+[09/22 20:17:43.525572][info][146247][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:17:43.525584][info][146247][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:17:43.525588][info][146247][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:17:43.526427][info][146247][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:17:43.526435][info][146247][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:17:43.526439][info][146247][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:17:43.527208][info][146247][Pipeline.cpp:293] [CP9KB5300030] Start streams done!
+[09/22 20:17:43.527209][info][146247][Pipeline.cpp:250] [CP9KB5300030] Pipeline start done!
+[09/22 20:17:43.616066][info][146383][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:17:44.044232][info][146381][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:17:44.055300][info][146247][Pipeline.cpp:54] [CP9KB5300059] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300059}, @0x5DFEA7317CF0
+[09/22 20:17:44.055470][info][146247][Pipeline.cpp:228] [CP9KB5300059] Check and set config done!
+[09/22 20:17:44.055643][info][146247][Pipeline.cpp:266] [CP9KB5300059] Try to start streams!
+[09/22 20:17:44.055652][info][146247][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:17:44.055660][info][146247][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:17:44.055661][info][146247][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:17:44.056438][info][146247][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:17:44.056444][info][146247][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:17:44.056447][info][146247][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:17:44.057207][info][146247][Pipeline.cpp:293] [CP9KB5300059] Start streams done!
+[09/22 20:17:44.057208][info][146247][Pipeline.cpp:250] [CP9KB5300059] Pipeline start done!
+[09/22 20:17:44.145973][info][146422][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:17:44.576920][info][146420][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:17:48.619255][info][146383][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=30.169830fps
+[09/22 20:17:48.622255][info][146386][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=30.151758fps
+[09/22 20:17:49.048984][info][146381][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=30.157780fps
+[09/22 20:17:49.049031][info][146388][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=30.157780fps
+[09/22 20:17:49.149215][info][146422][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=30.163803fps
+[09/22 20:17:49.152462][info][146425][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=30.157780fps
+[09/22 20:17:49.580382][info][146420][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=30.163803fps
+[09/22 20:17:49.580429][info][146427][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=30.163803fps
+[09/22 20:17:53.622515][info][146383][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:17:53.624988][info][146386][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:17:54.052240][info][146381][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:17:54.052284][info][146388][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:17:54.152501][info][146422][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:17:54.155304][info][146425][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:17:54.583640][info][146420][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:17:54.583692][info][146427][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:17:58.625744][info][146383][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:17:58.628423][info][146386][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:17:59.055512][info][146381][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:17:59.055590][info][146388][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:17:59.155799][info][146422][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:17:59.158497][info][146425][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:17:59.586873][info][146420][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:17:59.586965][info][146427][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:18:03.629028][info][146383][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:18:03.631913][info][146386][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:18:04.058755][info][146381][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:18:04.058829][info][146388][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:18:04.158939][info][146422][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:18:04.162491][info][146425][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.958059fps
+[09/22 20:18:04.590044][info][146420][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.770229fps
+[09/22 20:18:04.590131][info][146427][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.770229fps
+[09/22 20:18:08.632326][info][146383][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:18:08.635503][info][146386][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:18:09.062058][info][146381][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:18:09.062157][info][146388][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:18:09.162254][info][146422][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:18:09.164869][info][146425][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.976019fps
+[09/22 20:18:09.593352][info][146420][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:18:09.593404][info][146427][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:18:13.635554][info][146383][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:18:13.638379][info][146386][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:18:14.065416][info][146381][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:18:14.065502][info][146388][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:18:14.165488][info][146422][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:18:14.167975][info][146425][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:18:14.596513][info][146420][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:18:14.596546][info][146427][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:18:15.765719][info][146247][Pipeline.cpp:367] [CP9KB5300030] Try to stop pipeline!
+[09/22 20:18:15.765730][info][146247][Pipeline.cpp:343] [CP9KB5300030] Try to stop streams!
+[09/22 20:18:15.765757][info][146247][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:18:15.816842][info][146247][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:18:15.816952][info][146247][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Depth
+[09/22 20:18:15.816960][info][146247][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:18:15.859459][info][146247][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:18:15.859542][info][146247][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Color
+[09/22 20:18:15.859544][info][146247][Pipeline.cpp:363] [CP9KB5300030] Stop streams done!
+[09/22 20:18:15.859679][info][146247][Pipeline.cpp:393] [CP9KB5300030] Stop pipeline done!
+[09/22 20:18:15.859690][info][146247][Pipeline.cpp:65] [CP9KB5300030] Pipeline destroyed! @0x5DFEA7236D40
+[09/22 20:18:15.859717][info][146247][Pipeline.cpp:367] [CP9KB5300059] Try to stop pipeline!
+[09/22 20:18:15.859718][info][146247][Pipeline.cpp:343] [CP9KB5300059] Try to stop streams!
+[09/22 20:18:15.859725][info][146247][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:18:15.908606][info][146247][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:18:15.908686][info][146247][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Depth
+[09/22 20:18:15.908692][info][146247][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:18:15.947961][info][146247][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:18:15.948034][info][146247][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Color
+[09/22 20:18:15.948035][info][146247][Pipeline.cpp:363] [CP9KB5300059] Stop streams done!
+[09/22 20:18:15.948180][info][146247][Pipeline.cpp:393] [CP9KB5300059] Stop pipeline done!
+[09/22 20:18:15.948194][info][146247][Pipeline.cpp:65] [CP9KB5300059] Pipeline destroyed! @0x5DFEA7317CF0
+[09/22 20:18:16.394005][info][146247][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:18:16.394769][info][146247][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:18:16.394770][info][146247][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:18:16.394827][info][146247][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:18:16.395986][info][146247][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:18:16.395988][info][146247][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:18:16.397011][info][146247][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 20:18:16.397847][info][146247][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:18:16.397850][info][146247][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:18:16.397976][info][146247][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 20:18:16.399368][info][146247][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:18:16.399370][info][146247][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:33:33.378782][info][149227][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[09/22 20:33:33.380078][info][149227][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[09/22 20:33:33.380087][info][149227][DeviceManager.cpp:25] Current found device(s): (2)
+[09/22 20:33:33.380088][info][149227][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:33:33.380089][info][149227][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:33:33.380090][info][149227][DeviceManager.cpp:463] Enable net device enumeration: true
+[09/22 20:33:34.388325][info][149227][DeviceManager.cpp:25] Current device(s) list: (2)
+[09/22 20:33:34.388342][info][149227][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:33:34.388343][info][149227][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:33:34.389161][info][149227][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:33:34.389975][info][149227][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:33:34.389977][info][149227][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:33:34.389977][info][149227][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:33:34.389978][info][149227][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:33:34.389978][info][149227][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:33:34.389983][info][149227][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:33:34.545047][warning][149227][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 5525
+[09/22 20:33:34.545075][warning][149227][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 277
+[09/22 20:33:34.545160][warning][149227][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:33:34.551393][warning][149227][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:33:34.552528][warning][149227][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:33:34.552992][warning][149227][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:33:34.553936][warning][149227][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:33:34.571521][warning][149227][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:33:34.572271][warning][149227][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:33:34.572283][warning][149227][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:33:34.572435][warning][149227][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:33:34.572537][info][149227][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030 FW: 1.4.60
+[09/22 20:33:34.572786][info][149227][Pipeline.cpp:54] [CP9KB5300030] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300030}, @0x58BF85E82B90
+[09/22 20:33:34.572954][info][149227][Pipeline.cpp:228] [CP9KB5300030] Check and set config done!
+[09/22 20:33:34.573085][info][149227][Pipeline.cpp:266] [CP9KB5300030] Try to start streams!
+[09/22 20:33:34.573091][info][149227][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:33:34.573098][info][149227][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:33:34.573100][info][149227][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:33:34.573855][info][149227][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:33:34.573860][info][149227][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:33:34.573863][info][149227][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:33:34.574756][info][149227][Pipeline.cpp:293] [CP9KB5300030] Start streams done!
+[09/22 20:33:34.574757][info][149227][Pipeline.cpp:250] [CP9KB5300030] Pipeline start done!
+[09/22 20:33:34.663783][info][149346][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:33:35.125443][info][149344][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:33:36.134308][info][149227][Pipeline.cpp:367] [CP9KB5300030] Try to stop pipeline!
+[09/22 20:33:36.134322][info][149227][Pipeline.cpp:343] [CP9KB5300030] Try to stop streams!
+[09/22 20:33:36.134337][info][149227][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:33:36.184282][info][149227][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:33:36.184363][info][149227][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Depth
+[09/22 20:33:36.184370][info][149227][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:33:36.224661][info][149227][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:33:36.224755][info][149227][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Color
+[09/22 20:33:36.224757][info][149227][Pipeline.cpp:363] [CP9KB5300030] Stop streams done!
+[09/22 20:33:36.224909][info][149227][Pipeline.cpp:393] [CP9KB5300030] Stop pipeline done!
+[09/22 20:33:36.224929][info][149227][Pipeline.cpp:65] [CP9KB5300030] Pipeline destroyed! @0x58BF85E82B90
+[09/22 20:33:36.231813][info][149227][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:33:36.232600][info][149227][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:33:36.232601][info][149227][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:33:36.232649][info][149227][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:33:36.233893][info][149227][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:33:36.233896][info][149227][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:38:08.443726][info][150143][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[09/22 20:38:08.445008][info][150143][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[09/22 20:38:08.445017][info][150143][DeviceManager.cpp:25] Current found device(s): (2)
+[09/22 20:38:08.445019][info][150143][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:38:08.445019][info][150143][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:38:08.445021][info][150143][DeviceManager.cpp:463] Enable net device enumeration: true
+[09/22 20:38:09.446449][info][150143][DeviceManager.cpp:25] Current device(s) list: (2)
+[09/22 20:38:09.446465][info][150143][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 20:38:09.446466][info][150143][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 20:38:09.447262][info][150143][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:38:09.448066][info][150143][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:38:09.448071][info][150143][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:38:09.448072][info][150143][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:38:09.448073][info][150143][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:38:09.448073][info][150143][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:38:09.448074][info][150143][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:38:09.603262][warning][150143][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 5525
+[09/22 20:38:09.603287][warning][150143][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 277
+[09/22 20:38:09.603365][warning][150143][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:38:09.609357][warning][150143][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:38:09.610480][warning][150143][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:38:09.610946][warning][150143][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:38:09.611810][warning][150143][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:38:09.628987][warning][150143][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:38:09.629709][warning][150143][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:38:09.629718][warning][150143][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:38:09.629883][warning][150143][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:38:09.630013][info][150143][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030 FW: 1.4.60
+[09/22 20:38:09.630721][info][150143][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 20:38:09.631498][info][150143][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 20:38:09.631499][info][150143][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 20:38:09.631500][info][150143][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 20:38:09.631500][info][150143][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 20:38:09.631500][info][150143][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 20:38:09.631501][info][150143][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 20:38:09.786364][warning][150143][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 5525
+[09/22 20:38:09.786397][warning][150143][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 277
+[09/22 20:38:09.786471][warning][150143][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 20:38:09.808148][warning][150143][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:38:09.809239][warning][150143][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:38:09.809719][warning][150143][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 20:38:09.810612][warning][150143][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 20:38:09.850446][warning][150143][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:38:09.851180][warning][150143][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 20:38:09.851191][warning][150143][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 20:38:09.851353][warning][150143][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 20:38:09.851466][info][150143][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059 FW: 1.4.60
+[09/22 20:38:09.970081][info][150143][Pipeline.cpp:54] [CP9KB5300030] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300030}, @0x590D30265FD0
+[09/22 20:38:09.970262][info][150143][Pipeline.cpp:228] [CP9KB5300030] Check and set config done!
+[09/22 20:38:09.970405][info][150143][Pipeline.cpp:266] [CP9KB5300030] Try to start streams!
+[09/22 20:38:09.970414][info][150143][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:38:09.970425][info][150143][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:38:09.970427][info][150143][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:38:09.971180][info][150143][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:38:09.971188][info][150143][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:38:09.971192][info][150143][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:38:09.971927][info][150143][Pipeline.cpp:293] [CP9KB5300030] Start streams done!
+[09/22 20:38:09.971929][info][150143][Pipeline.cpp:250] [CP9KB5300030] Pipeline start done!
+[09/22 20:38:10.060508][info][150282][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:38:10.522705][info][150280][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:38:10.533550][info][150143][Pipeline.cpp:54] [CP9KB5300059] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300059}, @0x590D30347500
+[09/22 20:38:10.533747][info][150143][Pipeline.cpp:228] [CP9KB5300059] Check and set config done!
+[09/22 20:38:10.533889][info][150143][Pipeline.cpp:266] [CP9KB5300059] Try to start streams!
+[09/22 20:38:10.533899][info][150143][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:38:10.533909][info][150143][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Color
+[09/22 20:38:10.533911][info][150143][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 20:38:10.534665][info][150143][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 20:38:10.534673][info][150143][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Depth
+[09/22 20:38:10.534677][info][150143][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 20:38:10.535480][info][150143][Pipeline.cpp:293] [CP9KB5300059] Start streams done!
+[09/22 20:38:10.535481][info][150143][Pipeline.cpp:250] [CP9KB5300059] Pipeline start done!
+[09/22 20:38:10.623706][info][150321][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Depth
+[09/22 20:38:11.055054][info][150319][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Color
+[09/22 20:38:15.063725][info][150282][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=30.169830fps
+[09/22 20:38:15.066695][info][150285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=30.163803fps
+[09/22 20:38:15.526649][info][150280][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=30.157780fps
+[09/22 20:38:15.526699][info][150287][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=30.157780fps
+[09/22 20:38:15.627023][info][150321][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=30.163803fps
+[09/22 20:38:15.630153][info][150324][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=30.157780fps
+[09/22 20:38:16.058224][info][150319][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=30.169830fps
+[09/22 20:38:16.058281][info][150327][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=30.163803fps
+[09/22 20:38:20.067040][info][150282][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:20.069745][info][150285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:38:20.529888][info][150280][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:38:20.529923][info][150287][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:38:20.630278][info][150321][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:20.632644][info][150324][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:38:21.061480][info][150319][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:38:21.061600][info][150327][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:38:25.070198][info][150282][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:25.073944][info][150285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 20:38:25.533158][info][150280][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:38:25.533188][info][150287][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:38:25.633512][info][150321][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:25.636335][info][150324][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:38:26.064690][info][150319][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:38:26.064748][info][150327][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:38:30.073459][info][150282][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:30.076024][info][150285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.976019fps
+[09/22 20:38:30.536247][info][150280][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:38:30.536282][info][150287][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:38:30.636776][info][150321][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:38:30.639155][info][150324][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:38:31.068251][info][150319][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:38:31.068320][info][150327][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:38:35.076897][info][150282][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:35.079455][info][150285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:38:35.539802][info][150280][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:38:35.539912][info][150287][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:38:35.639999][info][150321][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:35.642711][info][150324][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:38:36.071251][info][150319][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:38:36.071313][info][150327][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:38:40.080039][info][150282][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:38:40.083837][info][150285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 20:38:40.542959][info][150280][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:38:40.543017][info][150287][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:38:40.643206][info][150321][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:40.645472][info][150324][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:38:41.074320][info][150319][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:38:41.074393][info][150327][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:38:45.083258][info][150282][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:45.086160][info][150285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:38:45.546186][info][150280][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:38:45.546330][info][150287][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:38:45.646584][info][150321][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:45.649234][info][150324][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:38:46.077501][info][150319][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:38:46.077534][info][150327][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:38:50.086540][info][150282][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:50.089684][info][150285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:38:50.549464][info][150280][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:38:50.549557][info][150287][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:38:50.649815][info][150321][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:38:50.652571][info][150324][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:38:51.080828][info][150319][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:38:51.080938][info][150327][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:38:55.089760][info][150282][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:55.092314][info][150285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:38:55.552719][info][150280][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:38:55.552862][info][150287][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:38:55.652934][info][150321][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:38:55.655925][info][150324][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:38:56.084110][info][150319][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:38:56.084269][info][150327][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:39:00.093114][info][150282][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:39:00.096230][info][150285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 20:39:00.555976][info][150280][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 20:39:00.556036][info][150287][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:39:00.656180][info][150321][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:39:00.659491][info][150324][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 20:39:01.087233][info][150319][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:39:01.087295][info][150327][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 20:39:05.096633][info][150282][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:39:05.100370][info][150285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 20:39:05.559354][info][150280][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:39:05.559472][info][150287][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 20:39:05.659444][info][150321][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:39:05.662282][info][150324][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 20:39:06.090495][info][150319][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:39:06.090558][info][150327][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:39:10.099542][info][150282][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 20:39:10.102939][info][150285][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 20:39:10.562522][info][150280][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:39:10.562577][info][150287][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 20:39:10.662664][info][150321][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 20:39:10.666146][info][150324][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.958059fps
+[09/22 20:39:11.093744][info][150319][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 20:39:11.093810][info][150327][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 20:39:13.809740][info][150143][Pipeline.cpp:367] [CP9KB5300030] Try to stop pipeline!
+[09/22 20:39:13.809752][info][150143][Pipeline.cpp:343] [CP9KB5300030] Try to stop streams!
+[09/22 20:39:13.809766][info][150143][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:39:13.860690][info][150143][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:39:13.860790][info][150143][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Depth
+[09/22 20:39:13.860797][info][150143][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:39:13.900170][info][150143][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:39:13.900250][info][150143][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Color
+[09/22 20:39:13.900251][info][150143][Pipeline.cpp:363] [CP9KB5300030] Stop streams done!
+[09/22 20:39:13.900382][info][150143][Pipeline.cpp:393] [CP9KB5300030] Stop pipeline done!
+[09/22 20:39:13.900391][info][150143][Pipeline.cpp:65] [CP9KB5300030] Pipeline destroyed! @0x590D30265FD0
+[09/22 20:39:13.900425][info][150143][Pipeline.cpp:367] [CP9KB5300059] Try to stop pipeline!
+[09/22 20:39:13.900427][info][150143][Pipeline.cpp:343] [CP9KB5300059] Try to stop streams!
+[09/22 20:39:13.900433][info][150143][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 20:39:13.950159][info][150143][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 20:39:13.950378][info][150143][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Depth
+[09/22 20:39:13.950388][info][150143][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Color
+[09/22 20:39:13.992123][info][150143][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Color
+[09/22 20:39:13.992192][info][150143][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Color
+[09/22 20:39:13.992194][info][150143][Pipeline.cpp:363] [CP9KB5300059] Stop streams done!
+[09/22 20:39:13.992320][info][150143][Pipeline.cpp:393] [CP9KB5300059] Stop pipeline done!
+[09/22 20:39:13.992333][info][150143][Pipeline.cpp:65] [CP9KB5300059] Pipeline destroyed! @0x590D30347500
+[09/22 20:39:14.192710][info][150143][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 20:39:14.193559][info][150143][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:39:14.193561][info][150143][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:39:14.193626][info][150143][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 20:39:14.194855][info][150143][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:39:14.194860][info][150143][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:39:14.195796][info][150143][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:39:14.196616][info][150143][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:39:14.196619][info][150143][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 20:39:14.196705][info][150143][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 20:39:14.197807][info][150143][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 20:39:14.197809][info][150143][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 21:09:44.846222][info][160816][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[09/22 21:09:44.847423][info][160816][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[09/22 21:09:44.847434][info][160816][DeviceManager.cpp:25] Current found device(s): (2)
+[09/22 21:09:44.847436][info][160816][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 21:09:44.847436][info][160816][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 21:09:44.847438][info][160816][DeviceManager.cpp:463] Enable net device enumeration: true
+[09/22 21:09:45.850091][info][160816][DeviceManager.cpp:25] Current device(s) list: (2)
+[09/22 21:09:45.850106][info][160816][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030, Connection: USB3.2
+[09/22 21:09:45.850107][info][160816][DeviceManager.cpp:34] 	- Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059, Connection: USB3.2
+[09/22 21:09:45.850806][info][160816][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 21:09:45.851558][info][160816][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 21:09:45.851559][info][160816][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 21:09:45.851560][info][160816][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 21:09:45.851561][info][160816][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 21:09:45.851561][info][160816][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 21:09:45.851561][info][160816][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 21:09:46.006689][warning][160816][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 5525
+[09/22 21:09:46.006721][warning][160816][PropertyServer.cpp:55] [CP9KB5300030] Property not found to register callback, propertyId: 277
+[09/22 21:09:46.006803][warning][160816][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 21:09:46.012820][warning][160816][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 21:09:46.013896][warning][160816][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 21:09:46.014342][warning][160816][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 21:09:46.015291][warning][160816][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 21:09:46.032518][warning][160816][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 21:09:46.033184][warning][160816][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 21:09:46.033186][warning][160816][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 21:09:46.033337][warning][160816][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 21:09:46.033420][info][160816][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300030 FW: 1.4.60
+[09/22 21:09:46.034053][info][160816][G330Device.cpp:630] UVCAutoRebootOnFault=true for device: Gemini 336
+[09/22 21:09:46.034829][info][160816][DeviceBase.cpp:742] key: AppSlot,value:2
+[09/22 21:09:46.034831][info][160816][DeviceBase.cpp:742] key: HwType,value:R1
+[09/22 21:09:46.034832][info][160816][DeviceBase.cpp:742] key: HwVer,value:V1.1
+[09/22 21:09:46.034833][info][160816][DeviceBase.cpp:742] key: IspFwVer,value:20241125
+[09/22 21:09:46.034833][info][160816][DeviceBase.cpp:742] key: IspNeedVer,value:20241125
+[09/22 21:09:46.034834][info][160816][DeviceBase.cpp:742] key: PresetVer,value:1.1.9
+[09/22 21:09:46.189823][warning][160816][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 5525
+[09/22 21:09:46.189868][warning][160816][PropertyServer.cpp:55] [CP9KB5300059] Property not found to register callback, propertyId: 277
+[09/22 21:09:46.189963][warning][160816][PropertyConfigHandler.hpp:53] Unsupported property '223', skipping getting, return nullvalue
+[09/22 21:09:46.212184][warning][160816][PropertyConfigHandler.hpp:95] Exporting property '190' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 21:09:46.213324][warning][160816][PresetHandler.cpp:337] Exporting ROI property '1061' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 21:09:46.213818][warning][160816][PresetHandler.cpp:710] Exporting disparity search properties while stream is not active; the values may differ from what will be applied after streaming starts
+[09/22 21:09:46.214630][warning][160816][PropertyConfigHandler.hpp:53] Unsupported property '5525', skipping getting, return nullvalue
+[09/22 21:09:46.254068][warning][160816][PropertyConfigHandler.hpp:95] Exporting property '189' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 21:09:46.254772][warning][160816][PropertyConfigHandler.hpp:53] Unsupported property '259', skipping getting, return nullvalue
+[09/22 21:09:46.254791][warning][160816][PropertyConfigHandler.hpp:53] Unsupported property '277', skipping getting, return nullvalue
+[09/22 21:09:46.254976][warning][160816][PresetHandler.cpp:337] Exporting ROI property '1060' while stream is not active; the value may differ from what will be applied after streaming starts
+[09/22 21:09:46.255139][info][160816][DeviceManager.cpp:200] Device created successfully! Name: Gemini 336, PID: 0x0803, SN/ID: CP9KB5300059 FW: 1.4.60
+[09/22 21:09:46.374010][info][160816][Pipeline.cpp:54] [CP9KB5300030] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300030}, @0x5FCE6F6161E0
+[09/22 21:09:46.374216][info][160816][Pipeline.cpp:228] [CP9KB5300030] Check and set config done!
+[09/22 21:09:46.374363][info][160816][Pipeline.cpp:266] [CP9KB5300030] Try to start streams!
+[09/22 21:09:46.374373][info][160816][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 21:09:46.374383][info][160816][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Color
+[09/22 21:09:46.374385][info][160816][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 21:09:46.375154][info][160816][VideoSensor.cpp:61] [CP9KB5300030] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 21:09:46.375162][info][160816][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPED to STARTING@Depth
+[09/22 21:09:46.375166][info][160816][VideoSensor.cpp:130] [CP9KB5300030] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 21:09:46.375920][info][160816][Pipeline.cpp:293] [CP9KB5300030] Start streams done!
+[09/22 21:09:46.375922][info][160816][Pipeline.cpp:250] [CP9KB5300030] Pipeline start done!
+[09/22 21:09:46.464775][info][160951][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Depth
+[09/22 21:09:46.894217][info][160949][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STARTING to STREAMING@Color
+[09/22 21:09:46.904307][info][160816][Pipeline.cpp:54] [CP9KB5300059] Pipeline created with device: {name: Gemini 336, sn: CP9KB5300059}, @0x5FCE6F6F7910
+[09/22 21:09:46.904460][info][160816][Pipeline.cpp:228] [CP9KB5300059] Check and set config done!
+[09/22 21:09:46.904623][info][160816][Pipeline.cpp:266] [CP9KB5300059] Try to start streams!
+[09/22 21:09:46.904632][info][160816][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 21:09:46.904641][info][160816][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Color
+[09/22 21:09:46.904643][info][160816][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 30}
+[09/22 21:09:46.905420][info][160816][VideoSensor.cpp:61] [CP9KB5300059] Try to start stream: {type: Depth, format: Y16, width: 640, height: 480, fps: 30}
+[09/22 21:09:46.905427][info][160816][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPED to STARTING@Depth
+[09/22 21:09:46.905430][info][160816][VideoSensor.cpp:130] [CP9KB5300059] Start backend stream: {type: Depth, format: Z16, width: 640, height: 480, fps: 30}
+[09/22 21:09:46.906210][info][160816][Pipeline.cpp:293] [CP9KB5300059] Start streams done!
+[09/22 21:09:46.906212][info][160816][Pipeline.cpp:250] [CP9KB5300059] Pipeline start done!
+[09/22 21:09:46.994988][info][160990][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Depth
+[09/22 21:09:47.426631][info][160988][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STARTING to STREAMING@Color
+[09/22 21:09:51.472753][info][160951][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=30.163803fps
+[09/22 21:09:51.476449][info][160954][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=30.157780fps
+[09/22 21:09:51.902946][info][160949][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=30.157780fps
+[09/22 21:09:51.903038][info][160956][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=30.157780fps
+[09/22 21:09:52.003429][info][160990][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=30.163803fps
+[09/22 21:09:52.006139][info][160994][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=30.157780fps
+[09/22 21:09:52.434784][info][160988][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=30.163803fps
+[09/22 21:09:52.434829][info][160997][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=30.169830fps
+[09/22 21:09:56.480979][info][160951][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 21:09:56.483745][info][160954][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 21:09:56.911127][info][160949][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 21:09:56.911210][info][160956][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 21:09:57.011569][info][160990][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 21:09:57.014748][info][160994][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 21:09:57.442904][info][160988][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 21:09:57.442953][info][160997][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 21:10:01.489178][info][160951][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 21:10:01.493228][info][160954][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 21:10:01.919253][info][160949][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 21:10:01.919332][info][160956][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 21:10:02.019559][info][160990][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 21:10:02.021911][info][160994][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 21:10:02.451375][info][160988][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.764282fps
+[09/22 21:10:02.451445][info][160997][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.764282fps
+[09/22 21:10:06.497381][info][160951][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 21:10:06.499945][info][160954][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 21:10:06.927183][info][160949][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 21:10:06.927227][info][160956][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 21:10:07.027665][info][160990][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 21:10:07.030865][info][160994][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 21:10:07.459005][info][160988][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 21:10:07.459081][info][160997][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 21:10:11.505534][info][160951][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 21:10:11.508221][info][160954][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 21:10:11.935333][info][160949][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 21:10:11.935383][info][160956][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.970030fps
+[09/22 21:10:12.035859][info][160990][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 21:10:12.039252][info][160994][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 21:10:12.465463][info][160988][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.976019fps
+[09/22 21:10:12.465517][info][160997][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.976019fps
+[09/22 21:10:16.513670][info][160951][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.970030fps
+[09/22 21:10:16.517094][info][160954][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.958059fps
+[09/22 21:10:16.943527][info][160949][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 21:10:16.943564][info][160956][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 21:10:17.044044][info][160990][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 21:10:17.046874][info][160994][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.970030fps
+[09/22 21:10:17.473625][info][160988][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 21:10:17.473681][info][160997][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 21:10:21.521869][info][160951][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 21:10:21.525547][info][160954][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 21:10:21.951707][info][160949][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 21:10:21.951751][info][160956][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 21:10:22.052295][info][160990][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.970030fps
+[09/22 21:10:22.055248][info][160994][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 21:10:22.481831][info][160988][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 21:10:22.481913][info][160997][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 21:10:26.530021][info][160951][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 21:10:26.532717][info][160954][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.970030fps
+[09/22 21:10:26.959864][info][160949][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.964043fps
+[09/22 21:10:26.959905][info][160956][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 21:10:27.060464][info][160990][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 21:10:27.063146][info][160994][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 21:10:27.489935][info][160988][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.970030fps
+[09/22 21:10:27.489996][info][160997][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.964043fps
+[09/22 21:10:31.538169][info][160951][VideoSensor.cpp:180] [CP9KB5300030] Depth backend frame callback, frameRate=29.964043fps
+[09/22 21:10:31.541188][info][160954][SensorBase.cpp:405] [CP9KB5300030] Depth Streaming... frameRate=29.964043fps
+[09/22 21:10:31.968059][info][160949][VideoSensor.cpp:180] [CP9KB5300030] Color backend frame callback, frameRate=29.970030fps
+[09/22 21:10:31.968143][info][160956][SensorBase.cpp:405] [CP9KB5300030] Color Streaming... frameRate=29.964043fps
+[09/22 21:10:32.068587][info][160990][VideoSensor.cpp:180] [CP9KB5300059] Depth backend frame callback, frameRate=29.964043fps
+[09/22 21:10:32.072052][info][160994][SensorBase.cpp:405] [CP9KB5300059] Depth Streaming... frameRate=29.964043fps
+[09/22 21:10:32.498085][info][160988][VideoSensor.cpp:180] [CP9KB5300059] Color backend frame callback, frameRate=29.964043fps
+[09/22 21:10:32.498170][info][160997][SensorBase.cpp:405] [CP9KB5300059] Color Streaming... frameRate=29.970030fps
+[09/22 21:10:34.726567][info][160816][Pipeline.cpp:367] [CP9KB5300030] Try to stop pipeline!
+[09/22 21:10:34.726576][info][160816][Pipeline.cpp:343] [CP9KB5300030] Try to stop streams!
+[09/22 21:10:34.726595][info][160816][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 21:10:34.776175][info][160816][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 21:10:34.776282][info][160816][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Depth
+[09/22 21:10:34.776290][info][160816][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STREAMING to STOPPING@Color
+[09/22 21:10:34.816471][info][160816][SensorBase.cpp:216] [CP9KB5300030] Stream state changed from STOPPING to STOPPED@Color
+[09/22 21:10:34.816548][info][160816][Pipeline.cpp:357] [CP9KB5300030] Sensor stream stopped, sensorType=Color
+[09/22 21:10:34.816549][info][160816][Pipeline.cpp:363] [CP9KB5300030] Stop streams done!
+[09/22 21:10:34.816681][info][160816][Pipeline.cpp:393] [CP9KB5300030] Stop pipeline done!
+[09/22 21:10:34.816690][info][160816][Pipeline.cpp:65] [CP9KB5300030] Pipeline destroyed! @0x5FCE6F6161E0
+[09/22 21:10:34.816727][info][160816][Pipeline.cpp:367] [CP9KB5300059] Try to stop pipeline!
+[09/22 21:10:34.816728][info][160816][Pipeline.cpp:343] [CP9KB5300059] Try to stop streams!
+[09/22 21:10:34.816734][info][160816][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Depth
+[09/22 21:10:34.867791][info][160816][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Depth
+[09/22 21:10:34.867892][info][160816][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Depth
+[09/22 21:10:34.867902][info][160816][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STREAMING to STOPPING@Color
+[09/22 21:10:34.909680][info][160816][SensorBase.cpp:216] [CP9KB5300059] Stream state changed from STOPPING to STOPPED@Color
+[09/22 21:10:34.909774][info][160816][Pipeline.cpp:357] [CP9KB5300059] Sensor stream stopped, sensorType=Color
+[09/22 21:10:34.909776][info][160816][Pipeline.cpp:363] [CP9KB5300059] Stop streams done!
+[09/22 21:10:34.909901][info][160816][Pipeline.cpp:393] [CP9KB5300059] Stop pipeline done!
+[09/22 21:10:34.909916][info][160816][Pipeline.cpp:65] [CP9KB5300059] Pipeline destroyed! @0x5FCE6F6F7910
+[09/22 21:10:35.112058][info][160816][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 21:10:35.112873][info][160816][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 21:10:35.112878][info][160816][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 21:10:35.112953][info][160816][SensorBase.cpp:53] [CP9KB5300059] SensorBase is destroyed
+[09/22 21:10:35.114193][info][160816][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 21:10:35.114196][info][160816][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 21:10:35.115171][info][160816][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 21:10:35.116001][info][160816][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 21:10:35.116004][info][160816][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done
+[09/22 21:10:35.116082][info][160816][SensorBase.cpp:53] [CP9KB5300030] SensorBase is destroyed
+[09/22 21:10:35.117079][info][160816][ObLibuvcDevicePort.cpp:87] uvc_close done.
+[09/22 21:10:35.117080][info][160816][ObLibuvcDevicePort.cpp:88] ~ObLibuvcDevicePort done

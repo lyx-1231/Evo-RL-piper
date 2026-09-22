@@ -127,7 +127,7 @@ def test_backwards_feedback_timestamp_is_rejected():
 
 
 class FakeCamera:
-    def __init__(self, sdk, device, config, depth_config, serial):
+    def __init__(self, sdk, device, config, depth_config, serial, name=None):
         self.serial = serial
         self.calibration = {"aligned_to_color": True, "alignment_mode": "software"}
         self.is_connected = False
@@ -161,6 +161,7 @@ class FakePiper:
         }
         self.is_connected = False
         self.observations = 0
+        self.sent_actions = []
         self.arm = SimpleNamespace(GetArmEndPoseMsgs=Mock(side_effect=self.read_eef))
         self.eef_enabled = eef_enabled
 
@@ -187,6 +188,7 @@ class FakePiper:
 
     def send_action(self, action):
         assert list(action) == list(PIPER_ACTION_KEYS)
+        self.sent_actions.append(dict(action))
         if self.observations % 3 == 0:
             self.events["exit_early"] = True
             self.events["episode_outcome"] = "success"
@@ -222,7 +224,10 @@ def recording_setup(tmp_path, monkeypatch, eef_enabled=True, with_depth=False):
             num_image_writer_threads_per_camera=1,
         ),
         eef=EefRecordConfig(enable=eef_enabled),
-        depth=DepthRecordConfig(enable=with_depth, serials={name: name.upper() for name in cameras}),
+        depth=DepthRecordConfig(
+            enable=with_depth,
+            serials={name: name.upper() for name in cameras},
+        ),
         play_sounds=False,
     )
     robot = FakePiper(events, cameras, eef_enabled)
@@ -255,6 +260,8 @@ def test_record_and_resume_eef_with_unchanged_joint_data(tmp_path, monkeypatch, 
     resumed = human_inloop_record(config)
     assert resumed.num_episodes == 3
     assert resumed.num_frames == 9
+    assert len(robot.sent_actions) == 9
+    assert robot.sent_actions == [dict.fromkeys(PIPER_ACTION_KEYS, 10.0)] * 9
     table = pq.read_table(config.dataset.root / "data").sort_by("index")
     np.testing.assert_array_equal(table["observation.state"].to_pylist(), [list(range(1, 8))] * 9)
     np.testing.assert_array_equal(table["action"].to_pylist(), [[10.0] * 7] * 9)
