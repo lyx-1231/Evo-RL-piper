@@ -453,9 +453,12 @@ def concatenate_video_files(
     stream_map = {}
     for input_stream in input_container.streams:
         if input_stream.type in ("video", "audio", "subtitle"):  # only copy compatible streams
-            stream_map[input_stream.index] = output_container.add_stream_from_template(
-                template=input_stream, opaque=True
-            )
+            if hasattr(output_container, "add_stream_from_template"):
+                stream_map[input_stream.index] = output_container.add_stream_from_template(
+                    template=input_stream, opaque=True
+                )
+            else:
+                stream_map[input_stream.index] = output_container.add_stream(template=input_stream)
 
             # set the time base to the input stream time base (missing in the codec context)
             stream_map[input_stream.index].time_base = input_stream.time_base
@@ -527,7 +530,7 @@ def get_audio_info(video_path: Path | str) -> dict:
             return {"has_audio": False}
 
         audio_info["audio.channels"] = audio_stream.channels
-        audio_info["audio.codec"] = audio_stream.codec.canonical_name
+        audio_info["audio.codec"] = getattr(audio_stream.codec, "canonical_name", audio_stream.codec.name)
         # In an ideal loseless case : bit depth x sample rate x channels = bit rate.
         # In an actual compressed case, the bit rate is set according to the compression level : the lower the bit rate, the more compression is applied.
         audio_info["audio.bit_rate"] = audio_stream.bit_rate
@@ -560,7 +563,7 @@ def get_video_info(video_path: Path | str) -> dict:
 
         video_info["video.height"] = video_stream.height
         video_info["video.width"] = video_stream.width
-        video_info["video.codec"] = video_stream.codec.canonical_name
+        video_info["video.codec"] = getattr(video_stream.codec, "canonical_name", video_stream.codec.name)
         video_info["video.pix_fmt"] = video_stream.pix_fmt
         video_info["video.is_depth_map"] = False
 

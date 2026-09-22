@@ -25,10 +25,12 @@ Phase A/B goals:
 import json
 import logging
 import time
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
 from lerobot.configs import parser
+from lerobot.scripts.human_inloop_depth import DepthRecordConfig, record_with_depth
 from lerobot.scripts.lerobot_record import RecordConfig, record
 from lerobot.utils.constants import HF_LEROBOT_HOME
 from lerobot.utils.import_utils import register_third_party_plugins
@@ -37,6 +39,11 @@ from lerobot.utils.recording_annotations import (
     EPISODE_SUCCESS,
     infer_collector_policy_version,
 )
+
+
+@dataclass
+class HumanInloopRecordConfig(RecordConfig):
+    depth: DepthRecordConfig = field(default_factory=DepthRecordConfig)
 
 
 def _default_failure_reset_pose_path(cfg: RecordConfig) -> Path:
@@ -132,7 +139,7 @@ class _HumanInloopFailureResetController:
 
 
 @parser.wrap()
-def human_inloop_record(cfg: RecordConfig):
+def human_inloop_record(cfg: HumanInloopRecordConfig):
     if cfg.teleop is None:
         raise ValueError("`lerobot-human-inloop-record` requires `teleop` config.")
 
@@ -162,7 +169,9 @@ def human_inloop_record(cfg: RecordConfig):
         cfg.acp_inference.use_cfg,
         cfg.acp_inference.cfg_beta,
     )
-    return record(cfg)
+    if cfg.depth.enable:
+        return record_with_depth(cfg, record.__wrapped__)
+    return record.__wrapped__(cfg)
 
 
 def main():

@@ -321,6 +321,8 @@ def _ensure_human_inloop_compatible_features(
 @parser.wrap()
 def record(cfg: RecordConfig) -> LeRobotDataset:
     init_logging()
+    if cfg.dataset.episode_time_s <= 0:
+        raise ValueError("`dataset.episode_time_s` must be greater than zero.")
     if cfg.require_episode_success_label and not cfg.enable_episode_outcome_labeling:
         raise ValueError(
             "`require_episode_success_label=true` requires `enable_episode_outcome_labeling=true`."
@@ -452,7 +454,10 @@ def record(cfg: RecordConfig) -> LeRobotDataset:
         with VideoEncodingManager(dataset):
             recorded_episodes = 0
             while recorded_episodes < cfg.dataset.num_episodes and not events["stop_recording"]:
+                events["exit_early"] = False
                 events["episode_outcome"] = None
+                if events["stop_recording"]:
+                    break
                 log_say(f"Recording episode {dataset.num_episodes}", cfg.play_sounds)
                 record_loop(
                     robot=robot,
@@ -478,6 +483,11 @@ def record(cfg: RecordConfig) -> LeRobotDataset:
                     communication_retry_timeout_s=cfg.communication_retry_timeout_s,
                     communication_retry_interval_s=cfg.communication_retry_interval_s,
                 )
+
+                if dataset.episode_buffer["size"] == 0:
+                    logging.warning("Episode %s has no frames; skipping empty episode.", dataset.num_episodes)
+                    events["rerecord_episode"] = False
+                    continue
 
                 episode_success = None
                 if cfg.enable_episode_outcome_labeling:

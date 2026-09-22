@@ -1,0 +1,64 @@
+{
+  "head": {
+    "serial": "CP9KB5300030",
+    "color_intrinsics": {
+      "width": 640,
+      "height": 480,
+      "fx": 460.1139831542969,
+      "fy": 460.1419372558594,
+      "cx": 324.2638244628906,
+      "cy": 241.45350646972656
+    },
+    "depth_intrinsics": {
+      "width": 640,
+      "height": 480,
+      "fx": 460.1139831542969,
+      "fy": 460.1419372558594,
+      "cx": 324.2638244628906,
+      "cy": 241.45350646972656
+    },
+    "native_depth_intrinsics": {
+      "width": 640,
+      "height": 480,
+      "fx": 373.410400390625,
+      "fy": 373.410400390625,
+      "cx": 315.8000183105469,
+      "cy": 240.5
+    },
+    "color_rotation": 0,
+    "depth_rotation": 0,
+    "aligned_to_color": true,
+    "alignment_mode": "software"
+  },
+  "wrist": {
+    "serial": "CP9KB5300059",
+    "color_intrinsics": {
+      "width": 640,
+      "height": 480,
+      "fx": 460.1628112792969,
+      "fy": 460.35260009765625,
+      "cx": 322.4493713378906,
+      "cy": 244.7354278564453
+    },
+    "depth_intrinsics": {
+      "width": 640,
+      "height": 480,
+      "fx": 460.1628112792969,
+      "fy": 460.35260009765625,
+      "cx": 322.4493713378906,
+      "cy": 244.7354278564453
+    },
+    "native_depth_intrinsics": {
+      "width": 640,
+      "height": 480,
+      "fx": 371.7171936035156,
+      "fy": 371.7171936035156,
+      "cx": 319.70001220703125,
+      "cy": 227.5
+    },
+    "color_rotation": 0,
+    "depth_rotation": 0,
+    "aligned_to_color": true,
+    "alignment_mode": "software"
+  }
+}
